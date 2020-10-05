@@ -17,4 +17,6 @@ A repo containing an example project to test Aspecto's benchmarks
  4. Start docker-compose with `docker-compose up`.
  5. Run benchmark command: `yarn benchmark <requests (default: 1000)> <concurrency (default: 10)>`.  
 
+ Make sure to relanch your containers between every benchmark check, so you won't have any leftovers.
+
  
