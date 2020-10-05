@@ -14,6 +14,7 @@
         "inlineSources": true,
         "allowSyntheticDefaultImports": true,
         "experimentalDecorators": true,
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "typeRoots": ["scripts/types", "./node_modules/@types"]
     }
 }

@@ -1,8 +1,6 @@
 import cp from 'child_process';
 import fs from 'fs';
-// @ts-ignore
 import ab from 'ab-result';
-import { ABReport } from './ABReport';
 import { cleanStatsLogFile } from './docker-stats';
 import { generateFullReport } from './generate-full-report';
 
@@ -38,7 +36,7 @@ const writeDockerStats = (fileName: string) => {
 const runApacheBench = (port: number, fileName: string) => {
     const result = cp.execSync(`ab -n ${requests} -c ${concurrency} http://localhost:${port}/test`);
     fs.writeFileSync(fileName, result.toString('utf8'));
-    return ab(result) as ABReport;
+    return ab(result.toString());
 };
 
 const benchmarkContainer = async (port: number, containerName: string) => {

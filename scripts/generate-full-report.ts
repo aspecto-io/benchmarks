@@ -1,8 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-// @ts-ignore
 import ab from 'ab-result';
-import { ABReport } from './ABReport';
 import colors from 'colors/safe';
 
 const average = (array: number[]) => (array.reduce((a, b) => a + b) / array.length).toFixed(2);
@@ -21,7 +19,7 @@ const generateForContainer = (description: string, container: string) => {
         memory.push(parseFloat(segments[1].replace('%', '')));
     });
     console.log(colors.bold(colors.blue(`\n${description}:`)));
-    console.log(`  Time: ${(ab(abReport) as ABReport).test.timeTaken}s`);
+    console.log(`  Time: ${ab(abReport).test.timeTaken}s`);
     console.log(
         `  CPU:\n   - min: ${Math.min.apply(Math, cpus)}%\n   - max: ${Math.max.apply(Math, cpus)}%\n   - avg: ${average(cpus)}%`
     );
