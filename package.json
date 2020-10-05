@@ -4,10 +4,12 @@
     "description": "A repo containing an example project to test Aspecto's benchmarks",
     "main": "index.ts",
     "scripts": {
-        "test": "echo \"todo\"",
-        "start": "NODE_ENV=development ts-node-dev src/index.ts",
-        "start:instrument": "NODE_ENV=development INSTRUMENT=true ts-node-dev src/index.ts",
-        "prettier": "prettier --config .prettierrc.yml --write \"**/*.{ts,tsx,js,jsx,json}\""
+        "start": "NODE_ENV=production ts-node src/index.ts",
+        "plain": "NODE_ENV=development ts-node-dev src/index.ts",
+        "aspecto": "NODE_ENV=development ASPECTO=true ts-node-dev src/index.ts",
+        "otel": "NODE_ENV=development OTEL=true ts-node-dev src/index.ts",
+        "prettier": "prettier --config .prettierrc.yml --write \"**/*.{ts,tsx,js,jsx,json}\"",
+        "benchmark": "ts-node scripts/measure.ts"
     },
     "repository": {
         "type": "git",
@@ -27,6 +29,15 @@
     "dependencies": {
         "@aspecto/logger": "^0.0.5",
         "@aspecto/opentelemetry": "^0.0.65",
+        "@opentelemetry/api": "^0.11.0",
+        "@opentelemetry/core": "^0.11.0",
+        "@opentelemetry/exporter-collector": "^0.11.0",
+        "@opentelemetry/exporter-zipkin": "^0.11.0",
+        "@opentelemetry/node": "^0.11.0",
+        "@opentelemetry/plugin-express": "^0.10.0",
+        "@opentelemetry/tracing": "^0.11.0",
+        "ab-result": "^1.0.2",
+        "colors": "^1.4.0",
         "env-var": "^6.3.0",
         "express": "^4.17.1",
         "systeminformation": "^4.27.6",
