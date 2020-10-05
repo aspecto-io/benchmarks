@@ -72,7 +72,7 @@ const containers = [
     },
     {
         name: 'benchmarks_otel',
-        port: 4041,
+        port: 4042,
     },
 ];
 

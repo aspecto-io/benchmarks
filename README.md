@@ -15,6 +15,6 @@ A repo containing an example project to test Aspecto's benchmarks
  3. Place your Aspecto [API key](https://app.aspecto.io/app/integration/api-key) in `aspecto.json` file.
  3. Build docker-compose with `docker-compose build`.
  4. Start docker-compose with `docker-compose up`.
- 5. Run benchmark command: `yarn benchmark <requests=10000> <concurrency=10>`.  
+ 5. Run benchmark command: `yarn benchmark <requests (default: 1000)> <concurrency (default: 10)>`.  
 
  
