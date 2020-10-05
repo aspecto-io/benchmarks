@@ -1,0 +1,55 @@
+{
+    "name": "benchmarks",
+    "version": "0.0.1",
+    "description": "A repo containing an example project to test Aspecto's benchmarks",
+    "main": "index.ts",
+    "scripts": {
+        "test": "echo \"todo\"",
+        "start": "NODE_ENV=development ts-node-dev src/index.ts",
+        "start:instrument": "NODE_ENV=development INSTRUMENT=true ts-node-dev src/index.ts",
+        "prettier": "prettier --config .prettierrc.yml --write \"**/*.{ts,tsx,js,jsx,json}\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aspecto-io/benchmarks.git"
+    },
+    "keywords": [
+        "aspecto",
+        "opentelemetry",
+        "benchmarks"
+    ],
+    "author": "Aspecto",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/aspecto-io/benchmarks/issues"
+    },
+    "homepage": "https://github.com/aspecto-io/benchmarks#readme",
+    "dependencies": {
+        "@aspecto/logger": "^0.0.5",
+        "@aspecto/opentelemetry": "^0.0.65",
+        "env-var": "^6.3.0",
+        "express": "^4.17.1",
+        "systeminformation": "^4.27.6",
+        "ts-node": "^9.0.0"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.8",
+        "@types/node": "^14.11.2",
+        "husky": "^4.3.0",
+        "lint-staged": "^10.4.0",
+        "prettier": "^2.1.2",
+        "ts-node-dev": "^1.0.0-pre.63",
+        "typescript": "^4.0.3"
+    },
+    "lint-staged": {
+        "*.{ts,tsx,js,jsx,json}": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    }
+}

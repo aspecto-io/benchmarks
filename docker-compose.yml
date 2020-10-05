@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  plain:
+    image: my-service
+    build: "."
+    ports:
+      - "4040:4040"
+    expose: 
+      - "4040"
+    environment:
+      - PORT=4040
+  aspecto:
+    image: my-service
+    ports:
+      - "4041:4041"
+    expose: 
+      - "4041"
+    environment:
+      - PORT=4041
+      - INSTRUMENT=true
+  
+
