@@ -9,7 +9,9 @@
         "aspecto": "NODE_ENV=development ASPECTO=true ts-node-dev src/index.ts",
         "otel": "NODE_ENV=development OTEL=true ts-node-dev src/index.ts",
         "prettier": "prettier --config .prettierrc.yml --write \"**/*.{ts,tsx,js,jsx,json}\"",
-        "benchmark": "ts-node scripts/measure.ts"
+        "benchmark": "ts-node scripts/measure.ts",
+        "report": "ts-node scripts/generate-full-report.ts report",
+        "build": "tsc"
     },
     "repository": {
         "type": "git",

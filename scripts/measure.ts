@@ -34,7 +34,7 @@ const writeDockerStats = (fileName: string) => {
 };
 
 const runApacheBench = (port: number, fileName: string) => {
-    const result = cp.execSync(`ab -n ${requests} -c ${concurrency} http://localhost:${port}/test`);
+    const result = cp.execSync(`ab -n ${requests} -c ${concurrency} -l http://localhost:${port}/test`);
     fs.writeFileSync(fileName, result.toString('utf8'));
     return ab(result.toString());
 };
