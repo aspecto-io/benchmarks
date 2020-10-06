@@ -9,15 +9,15 @@
   dependencies:
     serialize-error "^5.0.0"
 
-"@aspecto/opentelemetry-base@^0.0.65":
-  version "0.0.65"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-base/-/opentelemetry-base-0.0.65.tgz#8328f70f2864fc8b7db244798f68d379ecce248d"
-  integrity sha512-0O9E7gZxco6uLvgjoyUCR6mnxSqT91dY5e0qim+nw+oA7VwD8vQoIHBgzN079slB9Njso437dVSHKSis3KTSqQ==
+"@aspecto/opentelemetry-base@^0.0.67":
+  version "0.0.67"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-base/-/opentelemetry-base-0.0.67.tgz#ce680efb76e34081ff8eeaa448c072eaa5d33796"
+  integrity sha512-fZe0Uugy2YdsAGNcae8SKPQpuZciefTKthmUOZlRw3tb3+ON4HoYIxt+xvrr4j6Wd8ALRsq9bk8PyIiAVQLDSg==
 
-"@aspecto/opentelemetry-exporter-live@^0.0.65":
-  version "0.0.65"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-exporter-live/-/opentelemetry-exporter-live-0.0.65.tgz#01c5b55c729a5dd3e8e4093d0a22efd311367074"
-  integrity sha512-TYgXhS2ch00Hvkj+lKdid/q1TmCoDbMgLJrIRNAbGphdHC0IxSmh3d47WDQK9FQwR+thdYg7/sapkrEfAaehTQ==
+"@aspecto/opentelemetry-exporter-live@^0.0.67":
+  version "0.0.67"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-exporter-live/-/opentelemetry-exporter-live-0.0.67.tgz#2a86c2883111c502c255212a28e2fb03b59f543b"
+  integrity sha512-jWHk74PRa4Wzv5QcPFlxjAOPVkSKoZCZIvbJskzFWQk08TmOBqwft/zKZ8bT+BdVR+FqTW8BPOfIdRUu23Vlxw==
   dependencies:
     "@opentelemetry/core" "0.9.0"
     "@types/socket.io" "^2.1.8"
@@ -34,32 +34,32 @@
     socket.io-client "^2.3.0"
     uuid "^8.2.0"
 
-"@aspecto/opentelemetry-plugin-express@^0.0.65":
-  version "0.0.65"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-plugin-express/-/opentelemetry-plugin-express-0.0.65.tgz#8c466a47fbf71fa5a32afb33f1d34aff6fef19a3"
-  integrity sha512-CeKoHHDZUuhyJBQyB/LjFfb5RERWlEDckU/zdK59BSk8q3iWbGAKQ+yvYPGDmk2gWRa97eTZNjOzG22xJ3yTjA==
+"@aspecto/opentelemetry-plugin-express@^0.0.67":
+  version "0.0.67"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-plugin-express/-/opentelemetry-plugin-express-0.0.67.tgz#253a667399362ee5323ebebd7b900015e064d0f0"
+  integrity sha512-aSX1udvLwMnuvDJDHTvR7iAgyzY3i/SaKgvTNnkgfPshkrv121PZUXZ0P8BdKEq9gT+b03iyqtPr9ThWsl3Nzw==
   dependencies:
-    "@aspecto/opentelemetry-base" "^0.0.65"
+    "@aspecto/opentelemetry-base" "^0.0.67"
     "@opentelemetry/semantic-conventions" "0.9.0"
     shimmer "^1.2.1"
 
-"@aspecto/opentelemetry-plugin-kafka-node@^0.0.65":
-  version "0.0.65"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-plugin-kafka-node/-/opentelemetry-plugin-kafka-node-0.0.65.tgz#8dd3f3c3f130a32fd328f690c8fb4224c8c59cb1"
-  integrity sha512-F+gCZa4xePkvd5RFYBkuK0Sc+2DxYZNXk9dPs7MEq8KI2EpcGgIlctfSOkT7PmgzQZUSZKpCkNXUktOzyLUvUw==
+"@aspecto/opentelemetry-plugin-kafka-node@^0.0.67":
+  version "0.0.67"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-plugin-kafka-node/-/opentelemetry-plugin-kafka-node-0.0.67.tgz#6f548196624de179cf1394cc502ef573fdbfef84"
+  integrity sha512-10VzM266WwYUHrugyo307fDbbzH9iRKa2tZSMZWky8xR62dmQFeVjlVgXmFvPVwmEPux3RERJGqb1npTiLkhkQ==
   dependencies:
     "@opentelemetry/core" "0.9.0"
     shimmer "^1.2.1"
 
-"@aspecto/opentelemetry@^0.0.65":
-  version "0.0.65"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry/-/opentelemetry-0.0.65.tgz#1357417bcc17387439d2f8b8b0f299659bfd41c0"
-  integrity sha512-Rh9ML3yT96TV1tA4AFAJWHtJDyUvq+cPlRqAqINt10AmmI5A+x5fJ60CjzB+5LxlxIH8c3Nt5G1t1URv3fHe9g==
+"@aspecto/opentelemetry@^0.0.67":
+  version "0.0.67"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry/-/opentelemetry-0.0.67.tgz#bac7e2aa7a8f366bd8e7e9f3171a191bc6a3f535"
+  integrity sha512-z+tjFOnSoqwm+OvKyu/t384Z3yt3+T9VWXfgpK0cqpfnVjTi30e96V8SKUnT7KRvh/74McXjmmm/sWthuyqUbA==
   dependencies:
-    "@aspecto/opentelemetry-base" "^0.0.65"
-    "@aspecto/opentelemetry-exporter-live" "^0.0.65"
-    "@aspecto/opentelemetry-plugin-express" "^0.0.65"
-    "@aspecto/opentelemetry-plugin-kafka-node" "^0.0.65"
+    "@aspecto/opentelemetry-base" "^0.0.67"
+    "@aspecto/opentelemetry-exporter-live" "^0.0.67"
+    "@aspecto/opentelemetry-plugin-express" "^0.0.67"
+    "@aspecto/opentelemetry-plugin-kafka-node" "^0.0.67"
     "@opentelemetry/api" "0.9.0"
     "@opentelemetry/context-async-hooks" "0.9.0"
     "@opentelemetry/core" "0.9.0"
@@ -72,7 +72,7 @@
     "@opentelemetry/plugin-ioredis" "0.9.0"
     "@opentelemetry/tracing" "0.9.0"
     "@wdalmut/opentelemetry-plugin-mongoose" "0.2.3"
-    opentelemetry-plugin-aws-sdk "0.0.10"
+    opentelemetry-plugin-aws-sdk "0.0.11"
     opentelemetry-plugin-kafkajs "0.0.4"
     opentelemetry-plugin-typeorm "0.0.2"
     shimmer "1.2.1"
@@ -2233,10 +2233,10 @@ opencollective-postinstall@^2.0.2:
   resolved "https://registry.yarnpkg.com/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz#7a0fff978f6dbfa4d006238fbac98ed4198c3259"
   integrity sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q==
 
-opentelemetry-plugin-aws-sdk@0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/opentelemetry-plugin-aws-sdk/-/opentelemetry-plugin-aws-sdk-0.0.10.tgz#527a6bfb1bb20818ff503f8f6d35ee14880351af"
-  integrity sha512-gAt47/eWGtAU3iA+Mf/TbbPkOhouWFlX9DMNTgYC05sJiDSu7ma0/rabnXJo37rLhtlVxuFYhsw7duXyTNCl6w==
+opentelemetry-plugin-aws-sdk@0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/opentelemetry-plugin-aws-sdk/-/opentelemetry-plugin-aws-sdk-0.0.11.tgz#de874fa4acb216b4852c432d4df516d8fdef6e31"
+  integrity sha512-PWYs0nGcD985cFjUkEwEEPfZKb6J2SnJNL8A5DQF65qVVimyz+820yTTUYnLhpXFK8XEKt3dB9N21gN91CNUmA==
   dependencies:
     "@opentelemetry/core" "^0.9.0"
     shimmer "^1.2.1"
