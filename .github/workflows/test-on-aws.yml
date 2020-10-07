@@ -18,7 +18,7 @@ jobs:
 
       - name: Set Instance ID
         run: |
-          echo ::set-env name=INSTANCE_ID::$(jq ".Instances[0].InstanceId" ec2.json)
+          echo ::set-env name=INSTANCE_ID::$(jq ".Instances[0].InstanceId" ec2.json | tr -d '"')
           echo $INSTANCE_ID
 
       - name: Wait for EC2 
