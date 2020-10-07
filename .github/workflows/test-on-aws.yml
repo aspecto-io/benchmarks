@@ -18,11 +18,11 @@ jobs:
 
       - name: Set Instance ID
         run: |
-          jq ".Instances[0].InstanceId" ec2.json >> $INSTANCE_ID
+          echo ::set-env name=INSTANCE_ID::$(jq ".Instances[0].InstanceId" ec2.json)
           echo $INSTANCE_ID
 
       - name: Wait for EC2 
-        run: aws ec2 wait  instance-running  --instance-ids $instanceId
+        run: aws ec2 wait  instance-running  --instance-ids $INSTANCE_ID
 
       # - name: Sleep for 15 seconds
       #   uses: jakejarvis/wait-action@master
