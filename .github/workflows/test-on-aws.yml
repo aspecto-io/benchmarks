@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Start EC2 Instance
-        run: aws ec2 run-instances --image-id ${{ secrets.EC2_AMI }} --instance-type t3.medium --key-name ${{ secrets.EC2_KEY_NAME }} --subnet-id ${{ secrets.EC2_SUBNET }} --security-group-ids ${{ secrets.EC2_SG }} > ec2.json
+        run: aws ec2 run-instances --image-id ${{ secrets.EC2_AMI }} --instance-type t3.medium --key-name benchmark --subnet-id ${{ secrets.EC2_SUBNET }} --security-group-ids ${{ secrets.EC2_SG }} > ec2.json
 
       - name: Set Instance ID
         id: instanceId
@@ -38,7 +38,7 @@ jobs:
       - name: SSH to machine
         run: |
           ssh -i benchmark.pem ubuntu@$PUBLIC_IP
-          
+
       # - name: Sleep for 15 seconds
       #   uses: jakejarvis/wait-action@master
       #   with:
