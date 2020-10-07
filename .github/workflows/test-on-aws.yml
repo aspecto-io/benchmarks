@@ -22,8 +22,10 @@ jobs:
           echo ::set-env name=INSTANCE_ID::$(jq ".Instances[0].InstanceId" ec2.json | tr -d '"')
           echo $INSTANCE_ID
 
-      - name: Wait for EC2 
-        run: aws ec2 wait instance-running  --instance-ids $INSTANCE_ID
+      - name: Tag and Wait for EC2 
+        run: |
+          aws ec2 create-tags --resources $INSTANCE_ID --tags Key=Name,Value="Temp VM for Benchmark Testing"
+          aws ec2 wait instance-running --instance-ids $INSTANCE_ID
         env:
           AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -54,9 +56,9 @@ jobs:
 
       - name: SSH to machine
         run: |
-          ssh -o StrictHostKeyChecking=no -i benchmark.pem -v ubuntu@$PUBLIC_IP git clone https://${{ secrets.ADMIN_TOKEN }}@github.com/aspecto-io/benchmarks.git
-          ssh -o StrictHostKeyChecking=no -i benchmark.pem -v ubuntu@$PUBLIC_IP docker-compose -f benchmarks/docker-compose.yml build
-          ssh -o StrictHostKeyChecking=no -i benchmark.pem -v ubuntu@$PUBLIC_IP docker-compose -f benchmarks/docker-compose.yml up -d
+          ssh -o StrictHostKeyChecking=no -i benchmark.pem ubuntu@$PUBLIC_IP git clone https://${{ secrets.ADMIN_TOKEN }}@github.com/aspecto-io/benchmarks.git
+          ssh -o StrictHostKeyChecking=no -i benchmark.pem ubuntu@$PUBLIC_IP docker-compose -f benchmarks/docker-compose.yml build
+          ssh -o StrictHostKeyChecking=no -i benchmark.pem ubuntu@$PUBLIC_IP docker-compose -f benchmarks/docker-compose.yml up -d
       
       - name: Sleep for 15 seconds
         uses: jakejarvis/wait-action@master
