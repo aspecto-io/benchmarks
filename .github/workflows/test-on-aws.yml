@@ -32,12 +32,17 @@ jobs:
 
       - name: Create PEM --file
         run: |
-          echo "${{ secrets.EC2_PRIVATE_KEY }}"" > benchmark.pem
+          echo ${{ secrets.EC2_PRIVATE_KEY }} | perl -pe 's/\\n/\n/g' > benchmark.pem
+          chmod 400 benchmark.pem
           ls
 
       - name: SSH to machine
         run: |
           ssh -i benchmark.pem ubuntu@$PUBLIC_IP
+
+      - name: Terminate Instance
+        if: ${{ always() }}
+        run: aws ec2 terminate-instances --instance-ids $INSTANCE_ID
 
       # - name: Sleep for 15 seconds
       #   uses: jakejarvis/wait-action@master
