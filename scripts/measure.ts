@@ -6,7 +6,6 @@ import { generateFullReport } from './generate-full-report';
 
 const requests = process.argv[2] ?? 1000;
 const concurrency = process.argv[3] ?? 10;
-const sudo = process.argv[4] === 'sudo';
 
 const isPortFree = (port: number) =>
     new Promise((resolve) => {
@@ -24,9 +23,7 @@ const isPortFree = (port: number) =>
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 const writeDockerStats = (fileName: string) => {
-    const args = ['stats', '--format', 'table {{.CPUPerc}}\t{{.MemPerc}}\t{{.MemUsage}}\t{{.Name}}'];
-    sudo && args.unshift('docker');
-    const child = cp.spawn(sudo ? 'sudo' : 'docker', args, {
+    const child = cp.spawn('docker', ['stats', '--format', 'table {{.CPUPerc}}\t{{.MemPerc}}\t{{.MemUsage}}\t{{.Name}}'], {
         detached: true,
     });
     child.unref();
