@@ -17,16 +17,23 @@ jobs:
         run: aws ec2 run-instances --image-id ${{ secrets.EC2_AMI }} --instance-type t3.medium --key-name ${{ secrets.EC2_KEY_NAME }} --subnet-id ${{ secrets.EC2_SUBNET }} --security-group-ids ${{ secrets.EC2_SG }} > ec2.json
 
       - name: Set Instance ID
-        id: instanceId-getter
+        id: instanceId
         run: |
-          echo ::set-output name=INSTANCE_ID::$(jq ".Instances[0].InstanceId" ec2.json | tr -d '"')
+          echo ::set-env name=INSTANCE_ID::$(jq ".Instances[0].InstanceId" ec2.json | tr -d '"')
           echo $INSTANCE_ID
 
       - name: Wait for EC2 
-        run: |
-          echo 'Instance ID is:' ${steps.instanceId-getter.outputs.INSTANCE_ID}
-          aws ec2 wait  instance-running  --instance-ids ${steps.instanceId-getter.outputs.INSTANCE_ID}
+        run: aws ec2 wait instance-running  --instance-ids $INSTANCE_ID
 
+      - name: Get Public IP
+        run: |
+          aws ec2 describe-instances --filters "Name=instance-id,Values=$INSTANCE_ID" --query "Reservations[*].Instances[*].PublicIpAddress" > ip.json
+          echo ::set-env name=PUBLIC_IP::$(jq ".[0][0]" ip.json | tr -d '"')
+
+      - name: Create PEM --file
+        run: |
+          echo ${{ secrets.EC2_PRIVATE_KEY }} > ${{ secrets.EC2_KEY_NAME }}.pem
+          ls
       # - name: Sleep for 15 seconds
       #   uses: jakejarvis/wait-action@master
       #   with:
