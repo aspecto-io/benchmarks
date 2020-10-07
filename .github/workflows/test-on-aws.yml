@@ -47,30 +47,32 @@ jobs:
           cat /etc/ssh/ssh_config
           ls
 
-      - name: Sleep for 30 seconds
+      - name: Sleep for 20 seconds
         uses: jakejarvis/wait-action@master
         with:
-          time: '30s'
+          time: '20s'
 
       - name: SSH to machine
         run: |
           ssh -o StrictHostKeyChecking=no -i benchmark.pem -v ubuntu@$PUBLIC_IP git clone https://${{ secrets.ADMIN_TOKEN }}@github.com/aspecto-io/benchmarks.git
           ssh -o StrictHostKeyChecking=no -i benchmark.pem -v ubuntu@$PUBLIC_IP docker-compose -f benchmarks/docker-compose.yml build
-          ssh -o StrictHostKeyChecking=no -i benchmark.pem -v ubuntu@$PUBLIC_IP docker-compose -f benchmarks/docker-compose.yml up
-      # - name: Sleep for 15 seconds
-      #   uses: jakejarvis/wait-action@master
-      #   with:
-      #     time: '15s'
+          ssh -o StrictHostKeyChecking=no -i benchmark.pem -v ubuntu@$PUBLIC_IP docker-compose -f benchmarks/docker-compose.yml up -d
+      
+      - name: Sleep for 15 seconds
+        uses: jakejarvis/wait-action@master
+        with:
+          time: '15s'
 
-      # - name: Install Apache Bench
-      #   run: sudo apt-get install apache2-utils
+      - name: Install Apache Bench
+        run: | 
+          sudo apt-get install apache2-utils
+          ab -V
 
-      # - name: Verify Installation
-      #   run: ab -V
+      - name: Benchmark Test - Baseline
+        run: ab -n 1000 -c 10 -l http://$PUBLIC_IP:4040/test
 
-      # - name: Benchmark Test
-      #   run: yarn benchmark
-
+      - name: Benchmark Test - Aspecto
+        run: ab -n 1000 -c 10 -l http://$PUBLIC_IP:4041/test
 
       - name: Terminate Instance
         if: ${{ always() }}
