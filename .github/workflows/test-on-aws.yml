@@ -1,0 +1,39 @@
+name: Benchmark Test on AWS
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-18.04
+    env:
+      AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+
+    steps:
+      - name: Start EC2 Instance
+        run: aws ec2 run-instances --image-id ${{ secrets.EC2_AMI }} --instance-type t3.medium --key-name ${{ secrets.EC2_KEY_NAME }} --subnet-id ${{ secrets.EC2_SUBNET }} --security-group-ids ${{ secrets.EC2_SG }} > ec2.json
+
+      - name: Set Instance ID
+        run: |
+          instanceId=jq ".Instances[0].InstanceId" ec2.json
+          echo $instanceId
+
+      - name: Wait for EC2 
+        run: aws ec2 wait  instance-running  --instance-ids $instanceId
+
+      # - name: Sleep for 15 seconds
+      #   uses: jakejarvis/wait-action@master
+      #   with:
+      #     time: '15s'
+
+      # - name: Install Apache Bench
+      #   run: sudo apt-get install apache2-utils
+
+      # - name: Verify Installation
+      #   run: ab -V
+
+      # - name: Benchmark Test
+      #   run: yarn benchmark
