@@ -43,9 +43,9 @@ jobs:
 
       - name: SSH to machine
         run: |
-          ssh -i benchmark.pem ubuntu@$PUBLIC_IP git clone https://${{ secrets.ADMIN_TOKEN }}@github.com/aspecto-io/benchmarks.git
-          ssh -i benchmark.pem ubuntu@$PUBLIC_IP docker-compose -f benchmarks/docker-compose.yml build
-          ssh -i benchmark.pem ubuntu@$PUBLIC_IP docker-compose -f benchmarks/docker-compose.yml up
+          ssh -i benchmark.pem -v ubuntu@$PUBLIC_IP git clone https://${{ secrets.ADMIN_TOKEN }}@github.com/aspecto-io/benchmarks.git
+          ssh -i benchmark.pem -v ubuntu@$PUBLIC_IP docker-compose -f benchmarks/docker-compose.yml build
+          ssh -i benchmark.pem -v ubuntu@$PUBLIC_IP docker-compose -f benchmarks/docker-compose.yml up
       # - name: Sleep for 15 seconds
       #   uses: jakejarvis/wait-action@master
       #   with:
