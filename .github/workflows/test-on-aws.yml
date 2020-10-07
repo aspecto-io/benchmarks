@@ -36,6 +36,11 @@ jobs:
           chmod 400 benchmark.pem
           ls
 
+      - name: Sleep for 30 seconds
+        uses: jakejarvis/wait-action@master
+        with:
+          time: '30s'
+
       - name: SSH to machine
         run: |
           ssh -i benchmark.pem ubuntu@$PUBLIC_IP git clone https://${{ secrets.ADMIN_TOKEN }}@github.com/aspecto-io/benchmarks.git
