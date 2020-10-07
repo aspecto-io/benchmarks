@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Install Apache Bench
-        run: apt-get install apache2-utils
+        run: sudo apt-get install apache2-utils
 
       - name: Verify Installation
         run: ab -V
