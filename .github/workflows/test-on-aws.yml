@@ -18,8 +18,8 @@ jobs:
 
       - name: Set Instance ID
         run: |
-          instanceId=jq ".Instances[0].InstanceId" ec2.json
-          echo $instanceId
+          jq ".Instances[0].InstanceId" ec2.json >> $INSTANCE_ID
+          echo $INSTANCE_ID
 
       - name: Wait for EC2 
         run: aws ec2 wait  instance-running  --instance-ids $instanceId
