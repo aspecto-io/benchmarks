@@ -11,6 +11,7 @@
         "prettier": "prettier --config .prettierrc.yml --write \"**/*.{ts,tsx,js,jsx,json}\"",
         "benchmark": "ts-node scripts/measure.ts",
         "report:local": "ts-node scripts/generate-full-report-local-mode.ts report",
+        "report:aws": "ts-node scripts/generate-full-report-aws-mode.ts report",
         "build": "tsc"
     },
     "repository": {
@@ -39,6 +40,7 @@
         "@opentelemetry/plugin-express": "^0.10.0",
         "@opentelemetry/tracing": "^0.11.0",
         "ab-result": "^1.0.2",
+        "axios": "^0.20.0",
         "colors": "^1.4.0",
         "env-var": "^6.3.0",
         "express": "^4.17.1",
