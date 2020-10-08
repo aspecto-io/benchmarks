@@ -1,0 +1,14 @@
+name: Temp
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-18.04
+  steps:
+    - run: echo "{\"hello\":\"bye\"}" > test.json
+
+    - run: echo "INSTANCE_ID=$(jq ".hello" test.json)" >> $GITHUB_ENV
+
+    - run: echo $INSTANCE_ID
