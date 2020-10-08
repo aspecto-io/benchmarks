@@ -81,7 +81,7 @@ jobs:
       - name: Benchmark Test - Baseline
         run: |
           curl http://$PUBLIC_IP:4040/start-collecting
-          ab -n 2000 -c 10 -l http://$PUBLIC_IP:4040/test > scripts/logs/baseline-ab.log
+          ab -n 1000 -c 10 -l http://$PUBLIC_IP:4040/test > scripts/logs/baseline-ab.log
           curl http://$PUBLIC_IP:4040/report > scripts/logs/baseline-report.json
           cat scripts/logs/baseline-ab.log
           python -m json.tool scripts/logs/baseline-report.json
@@ -90,7 +90,7 @@ jobs:
       - name: Benchmark Test - Aspecto
         run: |
           curl http://$PUBLIC_IP:4041/start-collecting
-          ab -n 2000 -c 10 -l http://$PUBLIC_IP:4041/test > scripts/logs/aspecto-ab.log
+          ab -n 1000 -c 10 -l http://$PUBLIC_IP:4041/test > scripts/logs/aspecto-ab.log
           curl http://$PUBLIC_IP:4041/report > scripts/logs/aspecto-report.json
           cat scripts/logs/aspecto-ab.log
           python -m json.tool scripts/logs/aspecto-report.json
