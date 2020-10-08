@@ -71,10 +71,16 @@ jobs:
           ab -V
 
       - name: Benchmark Test - Baseline
-        run: ab -n 1000 -c 10 -l http://$PUBLIC_IP:4040/test
+        run: |
+          curl http://$PUBLIC_IP:4040/start-collecting
+          ab -n 1000 -c 10 -l http://$PUBLIC_IP:4040/test
+          curl http://$PUBLIC_IP:4040/report
 
       - name: Benchmark Test - Aspecto
-        run: ab -n 1000 -c 10 -l http://$PUBLIC_IP:4041/test
+        run: |
+          curl http://$PUBLIC_IP:4041/start-collecting
+          ab -n 1000 -c 10 -l http://$PUBLIC_IP:4041/test
+          curl http://$PUBLIC_IP:4041/report
 
       - name: Terminate Instance
         if: ${{ always() }}
