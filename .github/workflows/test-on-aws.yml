@@ -26,7 +26,7 @@ jobs:
       - name: Set Instance ID
         id: instanceId
         run: |
-          echo ::set-env name=INSTANCE_ID::$(jq ".Instances[0].InstanceId" ec2.json | tr -d '"')
+          echo "INSTANCE_ID=$(jq ".Instances[0].InstanceId" ec2.json | tr -d '"')" >> $GITHUB_ENV
           echo $INSTANCE_ID
 
       - name: Tag and Wait for EC2 
@@ -41,7 +41,8 @@ jobs:
       - name: Get Public IP
         run: |
           aws ec2 describe-instances --filters "Name=instance-id,Values=$INSTANCE_ID" --query "Reservations[*].Instances[*].PublicIpAddress" > ip.json
-          echo ::set-env name=PUBLIC_IP::$(jq ".[0][0]" ip.json | tr -d '"')
+          echo "PUBLIC_IP=$(jq ".[0][0]" ip.json | tr -d '"')" >> $GITHUB_ENV
+          echo $PUBLIC_IP
         env:
           AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
