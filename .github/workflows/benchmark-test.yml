@@ -1,0 +1,36 @@
+name: Benchmark Test
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Apache Bench
+        run: sudo apt-get install apache2-utils
+
+      - name: Verify Installation
+        run: ab -V
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: docker build
+        run: docker-compose build
+
+      - name: docker up
+        run: docker-compose up -d
+
+      - name: Sleep for 15 seconds
+        uses: jakejarvis/wait-action@master
+        with:
+          time: '15s'
+
+      - name: Benchmark Test
+        run: yarn benchmark
+
+      - name: Stop docker
+        run: docker stop $(docker ps -a -q)

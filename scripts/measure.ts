@@ -1,10 +1,8 @@
 import cp from 'child_process';
 import fs from 'fs';
-// @ts-ignore
 import ab from 'ab-result';
-import { ABReport } from './ABReport';
 import { cleanStatsLogFile } from './docker-stats';
-import { generateFullReport } from './generate-full-report';
+import { generateFullReport } from './generate-full-report-local-mode';
 
 const requests = process.argv[2] ?? 1000;
 const concurrency = process.argv[3] ?? 10;
@@ -36,9 +34,9 @@ const writeDockerStats = (fileName: string) => {
 };
 
 const runApacheBench = (port: number, fileName: string) => {
-    const result = cp.execSync(`ab -n ${requests} -c ${concurrency} http://localhost:${port}/test`);
+    const result = cp.execSync(`ab -n ${requests} -c ${concurrency} -l http://localhost:${port}/test`);
     fs.writeFileSync(fileName, result.toString('utf8'));
-    return ab(result) as ABReport;
+    return ab(result.toString());
 };
 
 const benchmarkContainer = async (port: number, containerName: string) => {
@@ -72,7 +70,7 @@ const containers = [
     },
     {
         name: 'benchmarks_otel',
-        port: 4041,
+        port: 4042,
     },
 ];
 

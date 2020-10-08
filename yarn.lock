@@ -9,15 +9,15 @@
   dependencies:
     serialize-error "^5.0.0"
 
-"@aspecto/opentelemetry-base@^0.0.65":
-  version "0.0.65"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-base/-/opentelemetry-base-0.0.65.tgz#8328f70f2864fc8b7db244798f68d379ecce248d"
-  integrity sha512-0O9E7gZxco6uLvgjoyUCR6mnxSqT91dY5e0qim+nw+oA7VwD8vQoIHBgzN079slB9Njso437dVSHKSis3KTSqQ==
+"@aspecto/opentelemetry-base@^0.0.67":
+  version "0.0.67"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-base/-/opentelemetry-base-0.0.67.tgz#ce680efb76e34081ff8eeaa448c072eaa5d33796"
+  integrity sha512-fZe0Uugy2YdsAGNcae8SKPQpuZciefTKthmUOZlRw3tb3+ON4HoYIxt+xvrr4j6Wd8ALRsq9bk8PyIiAVQLDSg==
 
-"@aspecto/opentelemetry-exporter-live@^0.0.65":
-  version "0.0.65"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-exporter-live/-/opentelemetry-exporter-live-0.0.65.tgz#01c5b55c729a5dd3e8e4093d0a22efd311367074"
-  integrity sha512-TYgXhS2ch00Hvkj+lKdid/q1TmCoDbMgLJrIRNAbGphdHC0IxSmh3d47WDQK9FQwR+thdYg7/sapkrEfAaehTQ==
+"@aspecto/opentelemetry-exporter-live@^0.0.67":
+  version "0.0.67"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-exporter-live/-/opentelemetry-exporter-live-0.0.67.tgz#2a86c2883111c502c255212a28e2fb03b59f543b"
+  integrity sha512-jWHk74PRa4Wzv5QcPFlxjAOPVkSKoZCZIvbJskzFWQk08TmOBqwft/zKZ8bT+BdVR+FqTW8BPOfIdRUu23Vlxw==
   dependencies:
     "@opentelemetry/core" "0.9.0"
     "@types/socket.io" "^2.1.8"
@@ -34,32 +34,32 @@
     socket.io-client "^2.3.0"
     uuid "^8.2.0"
 
-"@aspecto/opentelemetry-plugin-express@^0.0.65":
-  version "0.0.65"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-plugin-express/-/opentelemetry-plugin-express-0.0.65.tgz#8c466a47fbf71fa5a32afb33f1d34aff6fef19a3"
-  integrity sha512-CeKoHHDZUuhyJBQyB/LjFfb5RERWlEDckU/zdK59BSk8q3iWbGAKQ+yvYPGDmk2gWRa97eTZNjOzG22xJ3yTjA==
+"@aspecto/opentelemetry-plugin-express@^0.0.67":
+  version "0.0.67"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-plugin-express/-/opentelemetry-plugin-express-0.0.67.tgz#253a667399362ee5323ebebd7b900015e064d0f0"
+  integrity sha512-aSX1udvLwMnuvDJDHTvR7iAgyzY3i/SaKgvTNnkgfPshkrv121PZUXZ0P8BdKEq9gT+b03iyqtPr9ThWsl3Nzw==
   dependencies:
-    "@aspecto/opentelemetry-base" "^0.0.65"
+    "@aspecto/opentelemetry-base" "^0.0.67"
     "@opentelemetry/semantic-conventions" "0.9.0"
     shimmer "^1.2.1"
 
-"@aspecto/opentelemetry-plugin-kafka-node@^0.0.65":
-  version "0.0.65"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-plugin-kafka-node/-/opentelemetry-plugin-kafka-node-0.0.65.tgz#8dd3f3c3f130a32fd328f690c8fb4224c8c59cb1"
-  integrity sha512-F+gCZa4xePkvd5RFYBkuK0Sc+2DxYZNXk9dPs7MEq8KI2EpcGgIlctfSOkT7PmgzQZUSZKpCkNXUktOzyLUvUw==
+"@aspecto/opentelemetry-plugin-kafka-node@^0.0.67":
+  version "0.0.67"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-plugin-kafka-node/-/opentelemetry-plugin-kafka-node-0.0.67.tgz#6f548196624de179cf1394cc502ef573fdbfef84"
+  integrity sha512-10VzM266WwYUHrugyo307fDbbzH9iRKa2tZSMZWky8xR62dmQFeVjlVgXmFvPVwmEPux3RERJGqb1npTiLkhkQ==
   dependencies:
     "@opentelemetry/core" "0.9.0"
     shimmer "^1.2.1"
 
-"@aspecto/opentelemetry@^0.0.65":
-  version "0.0.65"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry/-/opentelemetry-0.0.65.tgz#1357417bcc17387439d2f8b8b0f299659bfd41c0"
-  integrity sha512-Rh9ML3yT96TV1tA4AFAJWHtJDyUvq+cPlRqAqINt10AmmI5A+x5fJ60CjzB+5LxlxIH8c3Nt5G1t1URv3fHe9g==
+"@aspecto/opentelemetry@^0.0.67":
+  version "0.0.67"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry/-/opentelemetry-0.0.67.tgz#bac7e2aa7a8f366bd8e7e9f3171a191bc6a3f535"
+  integrity sha512-z+tjFOnSoqwm+OvKyu/t384Z3yt3+T9VWXfgpK0cqpfnVjTi30e96V8SKUnT7KRvh/74McXjmmm/sWthuyqUbA==
   dependencies:
-    "@aspecto/opentelemetry-base" "^0.0.65"
-    "@aspecto/opentelemetry-exporter-live" "^0.0.65"
-    "@aspecto/opentelemetry-plugin-express" "^0.0.65"
-    "@aspecto/opentelemetry-plugin-kafka-node" "^0.0.65"
+    "@aspecto/opentelemetry-base" "^0.0.67"
+    "@aspecto/opentelemetry-exporter-live" "^0.0.67"
+    "@aspecto/opentelemetry-plugin-express" "^0.0.67"
+    "@aspecto/opentelemetry-plugin-kafka-node" "^0.0.67"
     "@opentelemetry/api" "0.9.0"
     "@opentelemetry/context-async-hooks" "0.9.0"
     "@opentelemetry/core" "0.9.0"
@@ -72,7 +72,7 @@
     "@opentelemetry/plugin-ioredis" "0.9.0"
     "@opentelemetry/tracing" "0.9.0"
     "@wdalmut/opentelemetry-plugin-mongoose" "0.2.3"
-    opentelemetry-plugin-aws-sdk "0.0.10"
+    opentelemetry-plugin-aws-sdk "0.0.11"
     opentelemetry-plugin-kafkajs "0.0.4"
     opentelemetry-plugin-typeorm "0.0.2"
     shimmer "1.2.1"
@@ -500,7 +500,7 @@
     "@types/qs" "*"
     "@types/range-parser" "*"
 
-"@types/express@^4.17.8":
+"@types/express@4.17.8":
   version "4.17.8"
   resolved "https://registry.yarnpkg.com/@types/express/-/express-4.17.8.tgz#3df4293293317e61c60137d273a2e96cd8d5f27a"
   integrity sha512-wLhcKh3PMlyA2cNAB9sjM1BntnhPMiM0JOBwPBqttjHev2428MLEB4AYVN+d8s2iyCVZac+o41Pflm/ZH5vLXQ==
@@ -520,7 +520,7 @@
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.3.tgz#c893b73721db73699943bfc3653b1deb7faa4a3a"
   integrity sha512-Jus9s4CDbqwocc5pOAnh8ShfrnMcPHuJYzVcSUU7lrh8Ni5HuIqX3oilL86p3dlTrk0LzHRCgA/GQ7uNCw6l2Q==
 
-"@types/node@*", "@types/node@^14.11.2":
+"@types/node@*", "@types/node@14.11.2":
   version "14.11.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.11.2.tgz#2de1ed6670439387da1c9f549a2ade2b0a799256"
   integrity sha512-jiE3QIxJ8JLNcb1Ps6rDbysDhN4xa8DJJvuC9prr6w+1tIh+QAbYyNF3tyiZNLDBIuBCf4KEcV2UvQm/V60xfA==
@@ -534,6 +534,11 @@
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
+
+"@types/pidusage@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@types/pidusage/-/pidusage-2.0.1.tgz#45eb309be947dcfa177957ef662ce2a0a2311d48"
+  integrity sha512-tYYcz/+5v/EGYT83C0pIXrJGOiVBLksQvxgJboG4nGqx/gZTvq0Ro4SkAjECqMk7L4Ww58VWB4j48qeYh4/YJg==
 
 "@types/qs@*":
   version "6.9.5"
@@ -1625,7 +1630,7 @@ human-signals@^1.1.1:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
   integrity sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==
 
-husky@^4.3.0:
+husky@4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/husky/-/husky-4.3.0.tgz#0b2ec1d66424e9219d359e26a51c58ec5278f0de"
   integrity sha512-tTMeLCLqSBqnflBZnlVDhpaIMucSGaYyX6855jM4AguGeWCeSzNdb1mfyWduTZ3pe3SJVvVWGL0jO1iKZVPfTA==
@@ -1838,7 +1843,7 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lint-staged@^10.4.0:
+lint-staged@10.4.0:
   version "10.4.0"
   resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.4.0.tgz#d18628f737328e0bbbf87d183f4020930e9a984e"
   integrity sha512-uaiX4U5yERUSiIEQc329vhCTDDwUcSvKdRLsNomkYLRzijk3v8V9GWm2Nz0RMVB87VcuzLvtgy6OsjoH++QHIg==
@@ -2233,10 +2238,10 @@ opencollective-postinstall@^2.0.2:
   resolved "https://registry.yarnpkg.com/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz#7a0fff978f6dbfa4d006238fbac98ed4198c3259"
   integrity sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q==
 
-opentelemetry-plugin-aws-sdk@0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/opentelemetry-plugin-aws-sdk/-/opentelemetry-plugin-aws-sdk-0.0.10.tgz#527a6bfb1bb20818ff503f8f6d35ee14880351af"
-  integrity sha512-gAt47/eWGtAU3iA+Mf/TbbPkOhouWFlX9DMNTgYC05sJiDSu7ma0/rabnXJo37rLhtlVxuFYhsw7duXyTNCl6w==
+opentelemetry-plugin-aws-sdk@0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/opentelemetry-plugin-aws-sdk/-/opentelemetry-plugin-aws-sdk-0.0.11.tgz#de874fa4acb216b4852c432d4df516d8fdef6e31"
+  integrity sha512-PWYs0nGcD985cFjUkEwEEPfZKb6J2SnJNL8A5DQF65qVVimyz+820yTTUYnLhpXFK8XEKt3dB9N21gN91CNUmA==
   dependencies:
     "@opentelemetry/core" "^0.9.0"
     shimmer "^1.2.1"
@@ -2418,6 +2423,13 @@ picomatch@^2.0.4, picomatch@^2.0.5, picomatch@^2.2.1:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.2.2.tgz#21f333e9b6b8eaff02468f5146ea406d345f4dad"
   integrity sha512-q0M/9eZHzmr0AulXyPwNfZjtwZ/RBZlbN3K3CErVrk50T2ASYI7Bye0EvekFY3IP1Nt2DHu0re+V2ZHIpMkuWg==
 
+pidusage@^2.0.21:
+  version "2.0.21"
+  resolved "https://registry.yarnpkg.com/pidusage/-/pidusage-2.0.21.tgz#7068967b3d952baea73e57668c98b9eaa876894e"
+  integrity sha512-cv3xAQos+pugVX+BfXpHsbyz/dLzX+lr44zNMsYiGxUw+kV5sgQCIcLd1z+0vq+KyC7dJ+/ts2PsfgWfSC3WXA==
+  dependencies:
+    safe-buffer "^5.2.1"
+
 pify@^2.0.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
@@ -2449,7 +2461,7 @@ please-upgrade-node@^3.2.0:
   dependencies:
     semver-compare "^1.0.0"
 
-prettier@^2.1.2:
+prettier@2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.1.2.tgz#3050700dae2e4c8b67c4c3f666cdb8af405e1ce5"
   integrity sha512-16c7K+x4qVlJg9rEbXl7HEGmQyZlG4R9AgP+oHKRMsMsuk8s+ATStlf1NpDqyBI1HpVyfjLOeMhH2LvuNvV5Vg==
@@ -2643,7 +2655,7 @@ safe-buffer@5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
 
-safe-buffer@^5.1.2, safe-buffer@~5.2.0:
+safe-buffer@^5.1.2, safe-buffer@^5.2.1, safe-buffer@~5.2.0:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
@@ -3029,11 +3041,6 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-systeminformation@^4.27.6:
-  version "4.27.6"
-  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-4.27.6.tgz#7b5fd3b9f7c23a6a144538dd3c7c6eb1c7072684"
-  integrity sha512-uFs6VAt/hhsBqb+2i9oH+tXm/uCP6e6lw4olfor5s5OkkZxYqisGvtSNXsLnSe27anF+tzyXte764MNJqXU9eg==
-
 tar-fs@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/tar-fs/-/tar-fs-2.0.1.tgz#e44086c1c60d31a4f0cf893b1c4e155dabfae9e2"
@@ -3100,7 +3107,7 @@ trim-newlines@^1.0.0:
   resolved "https://registry.yarnpkg.com/trim-newlines/-/trim-newlines-1.0.0.tgz#5887966bb582a4503a41eb524f7d35011815a613"
   integrity sha1-WIeWa7WCpFA6QetST301ARgVphM=
 
-ts-node-dev@^1.0.0-pre.63:
+ts-node-dev@1.0.0-pre.63:
   version "1.0.0-pre.63"
   resolved "https://registry.yarnpkg.com/ts-node-dev/-/ts-node-dev-1.0.0-pre.63.tgz#0e69df26cef35a728362d93348f13caa2cb2c512"
   integrity sha512-KURricXsXtiB4R+NCgiKgE01wyTe/GlXTdAPIhliDhF3kCn00kzyepAc1H8kbUJCmz0oYQq/GQ6CMtiWovs9qg==
@@ -3177,7 +3184,7 @@ type-is@~1.6.17, type-is@~1.6.18:
     media-typer "0.3.0"
     mime-types "~2.1.24"
 
-typescript@^4.0.3:
+typescript@4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.3.tgz#153bbd468ef07725c1df9c77e8b453f8d36abba5"
   integrity sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==
