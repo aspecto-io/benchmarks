@@ -7,8 +7,11 @@ jobs:
   test:
     runs-on: ubuntu-18.04
   steps:
-    - run: echo "{\"hello\":\"bye\"}" > test.json
+    - name: A
+      run: echo "{\"hello\":\"bye\"}" > test.json
 
-    - run: echo "INSTANCE_ID=$(jq ".hello" test.json)" >> $GITHUB_ENV
+    - name: B
+      run: echo "INSTANCE_ID=$(jq ".hello" test.json)" >> $GITHUB_ENV
 
-    - run: echo $INSTANCE_ID
+    - name: C
+      run: echo $INSTANCE_ID
