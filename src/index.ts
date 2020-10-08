@@ -58,6 +58,7 @@ app.get('/report', async (_req, res) => {
     const cpus = processInfo.map((info) => info.cpu);
     const cpu = {
         description: 'CPU% Usage',
+        initial: cpus[0],
         min: Math.min(...cpus),
         max: Math.max(...cpus),
         avg: average(cpus),
@@ -65,6 +66,7 @@ app.get('/report', async (_req, res) => {
     const memories = processInfo.map((info) => info.memory);
     const memory = {
         description: 'Memory in MB Used',
+        initial: memories[0],
         min: Math.min(...memories),
         max: Math.max(...memories),
         avg: average(memories),
