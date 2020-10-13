@@ -6,7 +6,7 @@ import pidusage from 'pidusage';
 
 if (ASPECTO) {
     logger.info(`Instrumenting using Aspecto process at port ${PORT}`);
-    Instrument({ logger, excludeJaeger: true });
+    Instrument({ logger });
 } else if (OTEL) {
     logger.info(`Instrumenting using OpenTelemetry process at port ${PORT}`);
     initOtel();
