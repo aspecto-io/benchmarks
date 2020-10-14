@@ -4,7 +4,7 @@
     "description": "A repo containing an example project to test Aspecto's benchmarks",
     "main": "index.ts",
     "scripts": {
-        "start": "NODE_ENV=production ts-node src/index.ts",
+        "start": "NODE_ENV=production ts-node -T src/index.ts",
         "plain": "NODE_ENV=development ts-node-dev src/index.ts",
         "aspecto": "NODE_ENV=development ASPECTO=true ts-node-dev src/index.ts",
         "otel": "NODE_ENV=development OTEL=true ts-node-dev src/index.ts",
