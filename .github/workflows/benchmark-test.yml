@@ -1,6 +1,6 @@
 name: Benchmark Test
 
-on: 
+on:
   workflow_dispatch:
 
 jobs:
@@ -17,6 +17,11 @@ jobs:
 
       - name: Install Dependencies
         run: yarn
+
+      - name: Set Token on aspecto.json
+        run: |
+          sed -i "s/<--your token goes here-->/${{ secrets.ASPECTO_API_KEY }}/g" aspecto.json
+          cat aspecto.json
 
       - name: docker build
         run: docker-compose build
