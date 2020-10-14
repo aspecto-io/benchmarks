@@ -65,6 +65,8 @@ jobs:
       - name: SSH to machine
         run: |
           ssh -o StrictHostKeyChecking=no -i benchmark.pem ubuntu@$PUBLIC_IP git clone https://${{ secrets.ADMIN_TOKEN }}@github.com/aspecto-io/benchmarks.git
+          ssh -o StrictHostKeyChecking=no -i benchmark.pem ubuntu@$PUBLIC_IP sed -i "s/<--your token goes here-->/${{ secrets.ASPECTO_API_KEY }}/g" benchmarks/aspecto.json
+          ssh -o StrictHostKeyChecking=no -i benchmark.pem ubuntu@$PUBLIC_IP cat benchmarks/aspecto.json
           ssh -o StrictHostKeyChecking=no -i benchmark.pem ubuntu@$PUBLIC_IP docker-compose -f benchmarks/docker-compose.yml build
           ssh -o StrictHostKeyChecking=no -i benchmark.pem ubuntu@$PUBLIC_IP docker-compose -f benchmarks/docker-compose.yml up -d
       
