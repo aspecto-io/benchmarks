@@ -20,7 +20,7 @@ jobs:
 
       - name: Set Token on aspecto.json
         run: |
-          sed -i "s/<--your token goes here-->/${{ secrets.ASPECTO_API_KEY }}/g" aspecto.json
+          sed -i "s/my-token/${{ secrets.ASPECTO_API_KEY }}/g" aspecto.json
           cat aspecto.json
 
       - name: docker build
