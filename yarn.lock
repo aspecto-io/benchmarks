@@ -9,15 +9,15 @@
   dependencies:
     serialize-error "^5.0.0"
 
-"@aspecto/opentelemetry-base@^0.0.73":
-  version "0.0.73"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-base/-/opentelemetry-base-0.0.73.tgz#d15ced6c6a4882f81226bc00db7dae7e58449c72"
-  integrity sha512-/IpxWFXEpA5dtLYHtHtogSnIrlqPVfOx77ADc+p94U4DkLJybGc93xaC/kxLsTpTViAdDWCvguilniF41nYtzw==
+"@aspecto/opentelemetry-base@^0.0.74":
+  version "0.0.74"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-base/-/opentelemetry-base-0.0.74.tgz#c5cda6b367221b7f573c49221a964f9808c81fb6"
+  integrity sha512-8+4MrwMXJM5Us8GeOZKIlptfwB4BGOyoK3C9drYd8Y6VhoeSTz9+7vSxOyDqmVNberwb4zMIfvB8NzTATakb+w==
 
-"@aspecto/opentelemetry-exporter-live@^0.0.73":
-  version "0.0.73"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-exporter-live/-/opentelemetry-exporter-live-0.0.73.tgz#43f2730d2300026aaf6f4c1e89876de4b6f63276"
-  integrity sha512-CUJ/rF3uJrzPzvg7A0Fm0G64kEKEW6h7h4YrD2Kju8EvM3CEa21PBhMotzzG1QLffXRdAAp48w3AmOjsCEf/kw==
+"@aspecto/opentelemetry-exporter-live@^0.0.74":
+  version "0.0.74"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-exporter-live/-/opentelemetry-exporter-live-0.0.74.tgz#8a6c4a023eccac0043c5afc6007a1f8142b0cb30"
+  integrity sha512-Efg/GFN748ZSH/CMR8vYVhgxZIbtI4c3tCvgbEi8EmGg2Y1mQ+RJ7HWGykC60wg2E35IVieFGYO91WLfHyvUYw==
   dependencies:
     "@opentelemetry/core" "0.12.0"
     "@types/socket.io" "^2.1.8"
@@ -34,23 +34,23 @@
     socket.io-client "^2.3.0"
     uuid "^8.2.0"
 
-"@aspecto/opentelemetry-plugin-express@^0.0.73":
-  version "0.0.73"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-plugin-express/-/opentelemetry-plugin-express-0.0.73.tgz#1434932c131ea5f781c8963d2ba2c5a8dcdab708"
-  integrity sha512-RvwcEPGACEjYztP2Ttrrh+4OjByizOEW/yToRwjuwmyguwMEASAiEbPS2gguH49xPk56UxOmUl1y//Aaf8l1cg==
+"@aspecto/opentelemetry-plugin-express@^0.0.74":
+  version "0.0.74"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-plugin-express/-/opentelemetry-plugin-express-0.0.74.tgz#d26a51c8959c1495d2d065f56dac8366b85483e5"
+  integrity sha512-nAJB+MN/FedIYlS7LQw4qqrE5QilUqK5NFzgXGtXH8dSkDui4F/QyiG+1vHo9SJGQ+RLW6fVT4xysULF0fmBbg==
   dependencies:
-    "@aspecto/opentelemetry-base" "^0.0.73"
+    "@aspecto/opentelemetry-base" "^0.0.74"
     "@opentelemetry/semantic-conventions" "0.12.0"
     shimmer "^1.2.1"
 
-"@aspecto/opentelemetry@^0.0.73":
-  version "0.0.73"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry/-/opentelemetry-0.0.73.tgz#b3a7245234718d38df431fcd8ab978cc3293a59e"
-  integrity sha512-niSH5vd0+d3Ex1sYIxLOubT3Y3ck1MwW8ueCvOn6a6WENr8OXs1MDMxBhRpCIzg1PZzEWRBQ/7qfeYfqFP2sUw==
+"@aspecto/opentelemetry@^0.0.74":
+  version "0.0.74"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry/-/opentelemetry-0.0.74.tgz#e87ae6975f94fa4cdea67be4b1cc208ab012b492"
+  integrity sha512-JPw6hSM3jVD6cE7+TPIoxe24NnMJpvxvGXdqY7tt6DOwQvNzk+orLLG6lvW04DACquDS0Y+zMK7Mc5IVJwp/CA==
   dependencies:
-    "@aspecto/opentelemetry-base" "^0.0.73"
-    "@aspecto/opentelemetry-exporter-live" "^0.0.73"
-    "@aspecto/opentelemetry-plugin-express" "^0.0.73"
+    "@aspecto/opentelemetry-base" "^0.0.74"
+    "@aspecto/opentelemetry-exporter-live" "^0.0.74"
+    "@aspecto/opentelemetry-plugin-express" "^0.0.74"
     "@opentelemetry/api" "0.12.0"
     "@opentelemetry/context-async-hooks" "0.12.0"
     "@opentelemetry/core" "0.12.0"
@@ -63,12 +63,12 @@
     "@opentelemetry/plugin-ioredis" "0.10.0"
     "@opentelemetry/tracing" "0.12.0"
     "@wdalmut/opentelemetry-plugin-mongoose" "0.2.3"
-    opentelemetry-plugin-aws-sdk "0.0.12"
+    opentelemetry-plugin-aws-sdk "0.0.13"
     opentelemetry-plugin-kafkajs "0.0.4"
     opentelemetry-plugin-typeorm "0.0.2"
     shimmer "1.2.1"
-    socket.io-client "^2.3.0"
-    uuid "^8.0.0"
+    socket.io-client "^2.3.1"
+    uuid "^8.3.1"
 
 "@babel/code-frame@^7.0.0":
   version "7.10.4"
@@ -119,13 +119,6 @@
   dependencies:
     "@opentelemetry/context-base" "^0.8.3"
 
-"@opentelemetry/api@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@opentelemetry/api/-/api-0.9.0.tgz#23dc68851f98eabfb981f0b0cc5b1c34d715fdcb"
-  integrity sha512-fJ0CzUf4favXihuD6dDUh4U6GPfEjswUy9w+N4SrIrX3wFi43bGb3BXPSctaWx3PQaRC3Rjsw12HWR+oRl9pRQ==
-  dependencies:
-    "@opentelemetry/context-base" "^0.9.0"
-
 "@opentelemetry/context-async-hooks@0.12.0", "@opentelemetry/context-async-hooks@^0.12.0":
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/@opentelemetry/context-async-hooks/-/context-async-hooks-0.12.0.tgz#7d74c568445ce26a0f7c1be3898900a58031f225"
@@ -159,11 +152,6 @@
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/@opentelemetry/context-base/-/context-base-0.8.3.tgz#ddaee3597ec62e8482a54e4fee157f004c7e44d1"
   integrity sha512-rnW85ubtTn2tA0Gg7MXLP2yEi4EplEXXDe7JKx8SwCyzXrk8htTwg0AVlRtsH0T5XyDCfvKq8Nh4eKqbwBA9iA==
-
-"@opentelemetry/context-base@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@opentelemetry/context-base/-/context-base-0.9.0.tgz#30ad9eee8b5abebc477b5d0a657474324ca5a8cb"
-  integrity sha512-4XUS2RoGKla+lqbEBKN4NUmPtJI/+NHVt7EHaw6XxFlBwyZ9HAX61Kk53Hlb6eUYOLOehdVx9Q+gdpamj018iQ==
 
 "@opentelemetry/core@0.12.0", "@opentelemetry/core@^0.12.0":
   version "0.12.0"
@@ -199,15 +187,6 @@
   dependencies:
     "@opentelemetry/api" "^0.8.3"
     "@opentelemetry/context-base" "^0.8.3"
-    semver "^7.1.3"
-
-"@opentelemetry/core@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@opentelemetry/core/-/core-0.9.0.tgz#bd140ff017094150239430847fc7e2929dd91d6f"
-  integrity sha512-OU4qmYbDTilvdNgr9rXIGgBh1GENPbQrkyAzob5l/4/blqTDi75a5S/ZfkNjweyVvufVbp81rpvSxu9oN9tg2g==
-  dependencies:
-    "@opentelemetry/api" "^0.9.0"
-    "@opentelemetry/context-base" "^0.9.0"
     semver "^7.1.3"
 
 "@opentelemetry/exporter-collector@0.12.0":
@@ -1787,12 +1766,13 @@ opencollective-postinstall@^2.0.2:
   resolved "https://registry.yarnpkg.com/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz#7a0fff978f6dbfa4d006238fbac98ed4198c3259"
   integrity sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q==
 
-opentelemetry-plugin-aws-sdk@0.0.12:
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/opentelemetry-plugin-aws-sdk/-/opentelemetry-plugin-aws-sdk-0.0.12.tgz#fb5b0fb2041cea07a5238c5b9a128357fbfae76a"
-  integrity sha512-v9mU+8v6Yzhc5FUJFsAZSHz5NFPD7NFkdC3LJA4BBI74n+M7+qYR/R68nlgstYaC9w5fXDXkkbTYfNRT+JKSgg==
+opentelemetry-plugin-aws-sdk@0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/opentelemetry-plugin-aws-sdk/-/opentelemetry-plugin-aws-sdk-0.0.13.tgz#0c3fdc6bc8e4020ac4123760c7b22b45302cd52c"
+  integrity sha512-n4pmjc/H4FojNbYdLHuHmDYntqLksAkzgYTTlCXDb+2AUUHExcPQyvj/Evq9u2Yyxodvnt02EY05xzgNjT9hgw==
   dependencies:
-    "@opentelemetry/core" "^0.9.0"
+    "@opentelemetry/api" "^0.12.0"
+    "@opentelemetry/core" "^0.12.0"
     shimmer "^1.2.1"
 
 opentelemetry-plugin-kafkajs@0.0.4:
@@ -2258,7 +2238,7 @@ socket.io-client@2.3.0:
     socket.io-parser "~3.3.0"
     to-array "0.1.4"
 
-socket.io-client@^2.3.0:
+socket.io-client@^2.3.0, socket.io-client@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/socket.io-client/-/socket.io-client-2.3.1.tgz#91a4038ef4d03c19967bb3c646fec6e0eaa78cff"
   integrity sha512-YXmXn3pA8abPOY//JtYxou95Ihvzmg8U6kQyolArkIyLd0pgVhrfor/iMsox8cn07WCOOvvuJ6XKegzIucPutQ==
@@ -2605,10 +2585,15 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@^8.0.0, uuid@^8.2.0:
+uuid@^8.2.0:
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.0.tgz#ab738085ca22dc9a8c92725e459b1d507df5d6ea"
   integrity sha512-fX6Z5o4m6XsXBdli9g7DtWgAx+osMsRRZFKma1mIUsLCz6vRvv+pz5VNbyu9UEDzpMWulZfvpgb/cmDXVulYFQ==
+
+uuid@^8.3.1:
+  version "8.3.1"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.1.tgz#2ba2e6ca000da60fce5a196954ab241131e05a31"
+  integrity sha512-FOmRr+FmWEIG8uhZv6C2bTgEVXsHk08kE7mPlrBbEe+c3r9pjceVPgupIfNIhc4yx55H69OXANrUaSuu9eInKg==
 
 validate-npm-package-license@^3.0.1:
   version "3.0.4"
