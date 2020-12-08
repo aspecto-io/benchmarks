@@ -9,15 +9,15 @@
   dependencies:
     serialize-error "^5.0.0"
 
-"@aspecto/opentelemetry-base@^0.0.85":
-  version "0.0.85"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-base/-/opentelemetry-base-0.0.85.tgz#5900f98260c62feaa66904c935b68c8c1d0b144c"
-  integrity sha512-kt5U2qkrxPuP/jak1kyyNuXVVFyOtxNVpB84ffpl8qCI9bQtktYIVqWIyNzVEtjHYMve5yUFeKI29dRrNgTy8w==
+"@aspecto/opentelemetry-base@^0.0.86":
+  version "0.0.86"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-base/-/opentelemetry-base-0.0.86.tgz#5744b8789108f946c221d5868990f454cdd420a2"
+  integrity sha512-BxigrLs0El2foj1/wpM3HXVN/0ot+yocWgsR22EVT24yPJR5YptCDa1dIMVsgOEM7SE9w8ciOem8W6e/rvljIQ==
 
-"@aspecto/opentelemetry-exporter-live@^0.0.85":
-  version "0.0.85"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-exporter-live/-/opentelemetry-exporter-live-0.0.85.tgz#9884de7cb5d5d30733ce6008d5a53ca78996e96c"
-  integrity sha512-ZF2QHgHcs8E1pw0NP22OZl+eQvme6sz871VF8Q8IAuEIJNkKmykORgR1uQ2uavxmwzajj1AUuGXmJP04gdvHrw==
+"@aspecto/opentelemetry-exporter-live@^0.0.86":
+  version "0.0.86"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-exporter-live/-/opentelemetry-exporter-live-0.0.86.tgz#ba98322bd567ad23ffb1c952b901cd186c6f37f1"
+  integrity sha512-USJ/jlJMF7CCbAdgXCYYKtk1EDwl0Ip/gojs5KxzaYG+9iRSH2zdzY5yWV0UK1mJeOL4hfP6Lp5ofs+e31pLVA==
   dependencies:
     "@opentelemetry/core" "0.12.0"
     "@types/socket.io" "^2.1.8"
@@ -34,24 +34,24 @@
     socket.io-client "^2.3.0"
     uuid "^8.2.0"
 
-"@aspecto/opentelemetry-plugin-express@^0.0.85":
-  version "0.0.85"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-plugin-express/-/opentelemetry-plugin-express-0.0.85.tgz#b389bfc9c02ff163eb0afee7e5e8276b1e48726c"
-  integrity sha512-1IP6UK3k5Gc2HoRezuT4o4kCkCQTeSGymUelclZw2GmJKOGTde0TyriW4ctl7KGonWvzqbkpCX8mrZ9HQrmRfA==
+"@aspecto/opentelemetry-plugin-express@^0.0.86":
+  version "0.0.86"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-plugin-express/-/opentelemetry-plugin-express-0.0.86.tgz#5267a989338f1016a88278d9de44c36478b2a5ae"
+  integrity sha512-AWFf0FwsRPLjf78es0yLjk4nLoy30Yds2qA2m3csU5F20HomJ9byD7yVwnhD0/k493gSix2XDF6a7GIao6X0gg==
   dependencies:
-    "@aspecto/opentelemetry-base" "^0.0.85"
+    "@aspecto/opentelemetry-base" "^0.0.86"
     "@opentelemetry/semantic-conventions" "0.12.0"
     shimmer "^1.2.1"
 
-"@aspecto/opentelemetry@^0.0.85":
-  version "0.0.85"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry/-/opentelemetry-0.0.85.tgz#2973cdadf7c44e323ee5943a116772386a18ba0e"
-  integrity sha512-2s8Vz+DBe9AifiwvdhraLhilTDynyMpuq3YvD2SMGZy8Tt2bCDus7/Oh8IJ2gxPfjK4bRfeazOfz4ilkQDDYSQ==
+"@aspecto/opentelemetry@^0.0.86":
+  version "0.0.86"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry/-/opentelemetry-0.0.86.tgz#136baf48e094b85d827c3890efb3a82db429c97b"
+  integrity sha512-dBNb0diNcWtoE9Rq1nLOPmbYsfYm4/z1eoCMdNSnDsxTXS8ZwouLwaN9q0sbTXmnPGb7Zh0t5fDHDecOh4XjgQ==
   dependencies:
-    "@aspecto/opentelemetry-base" "^0.0.85"
-    "@aspecto/opentelemetry-exporter-live" "^0.0.85"
-    "@aspecto/opentelemetry-plugin-express" "^0.0.85"
-    "@mzahor-test-org/plugin-ioredis" "^0.0.85"
+    "@aspecto/opentelemetry-base" "^0.0.86"
+    "@aspecto/opentelemetry-exporter-live" "^0.0.86"
+    "@aspecto/opentelemetry-plugin-express" "^0.0.86"
+    "@mzahor-test-org/plugin-ioredis" "^0.0.86"
     "@opentelemetry/api" "0.12.0"
     "@opentelemetry/context-async-hooks" "0.12.0"
     "@opentelemetry/core" "0.12.0"
@@ -95,10 +95,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@mzahor-test-org/plugin-ioredis@^0.0.85":
-  version "0.0.85"
-  resolved "https://registry.yarnpkg.com/@mzahor-test-org/plugin-ioredis/-/plugin-ioredis-0.0.85.tgz#b36068c753df073e0c611efc35de74a546d6b067"
-  integrity sha512-En7GEMKyRNWXWws+yGZGwn5G/szXRYWP50zBaVM1BhGytcDUVJCIcuN7GlyxHZW82hyjzoQKjOUbz99XhFO+tw==
+"@mzahor-test-org/plugin-ioredis@^0.0.86":
+  version "0.0.86"
+  resolved "https://registry.yarnpkg.com/@mzahor-test-org/plugin-ioredis/-/plugin-ioredis-0.0.86.tgz#719045c1b49715e5306c1f6ee596289753c43491"
+  integrity sha512-RDnwR+PzRPSFBi1FsgsAqpE55+fXK1hNoosG8pGKr5L7HZ6H2Sl2tCVlSRgti3aVc5UpXtDb7zib7TCr6IS2hw==
   dependencies:
     "@opentelemetry/api" "^0.12.0"
     "@opentelemetry/core" "^0.12.0"
