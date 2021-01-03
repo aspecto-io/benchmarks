@@ -25,7 +25,8 @@ A repo containing an example project to test Aspecto's benchmarks
 
 We have a Github Action CI running automatically on each new release of [@aspecto/opentelemetry](https://www.npmjs.com/package/@aspecto/opentelemetry).  
 On every new release the CI creates an AWS EC2 instance running the same service twice - once without instrumentation (baseline) and one using aspecto.  
-On each service we run benchmark tests.
+On each service we run benchmark tests.  
+> Instrumentation benchmarks are using 10% sampling ratio (recommended).
 
 
 The benchmark report is written in the CI output, and uploaded to the CI artifacts as well.  
