@@ -1,11 +1,8 @@
 {
-    "extends": ["config:base"],
+    "extends": [
+        "github>aspecto-io/renovate-config"
+    ],
     "packageRules": [
-        {
-            "packagePatterns": ["*"],
-            "excludePackagePatterns": ["@aspecto/opentelemetry"],
-            "enabled": false
-        },
         {
             "packageNames": ["@aspecto/opentelemetry"],
             "enabled": true,
@@ -14,3 +11,4 @@
         }
     ]
 }
+
