@@ -1,6 +1,6 @@
 {
     "extends": [
-        "github>aspecto-io/renovate-config"
+        "local>aspecto-io/renovate-config"
     ],
     "packageRules": [
         {
