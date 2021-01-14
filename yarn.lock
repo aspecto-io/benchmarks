@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@aspecto/logger@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@aspecto/logger/-/logger-0.0.5.tgz#4bd2ee48e415c15396287a64a0d9431e4a206def"
-  integrity sha512-7+bG8cs5juFqLnnBx6FUIcHa+7+jmZx4exqeYBQk755a6FYsZK6nYKBYsUAWI9ldSBP3t9sOkG5LnT40bGdCSQ==
+"@aspecto/logger@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@aspecto/logger/-/logger-0.0.11.tgz#1646f480f58974e2b00907b4bffcaa1d0136b796"
+  integrity sha512-9ifUavlZngXiqjs8Exla7jju+tnxqjrF7SAjnjjPQy50/BJjk7vZvkA0qwOgBoZDzmKNODhzWQU7lfx2OlGPoA==
   dependencies:
     serialize-error "^5.0.0"
 
