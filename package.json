@@ -40,7 +40,7 @@
         "@opentelemetry/plugin-express": "^0.10.0",
         "@opentelemetry/tracing": "^0.11.0",
         "ab-result": "^1.0.2",
-        "axios": "^0.20.0",
+        "axios": "^0.21.1",
         "colors": "^1.4.0",
         "env-var": "^6.3.0",
         "express": "^4.17.1",
