@@ -9,15 +9,15 @@
   dependencies:
     serialize-error "^5.0.0"
 
-"@aspecto/opentelemetry-base@^0.0.98":
-  version "0.0.98"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-base/-/opentelemetry-base-0.0.98.tgz#2542da7accb020e2ebbb110fa97c59951f9b21fc"
-  integrity sha512-TdFZq7Zs4tI0dWbi0323ZFg9EWiBAim1V0nNn68/yJ55kN0jrvmzHboobSOO6qKfKHrLuhEajqwByrhIkMJp3w==
+"@aspecto/opentelemetry-base@^0.0.99":
+  version "0.0.99"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-base/-/opentelemetry-base-0.0.99.tgz#dab5612067a7b29079d4ace3d5292a5b683b1b67"
+  integrity sha512-tbNLgfBj7INEJmgYrRBqSq3d4HvzCiTAZKEYoTqUGBRlZjTS0mEXuet5V37V1GK5z/yhKJFjecwhJKJZT5Pz9Q==
 
-"@aspecto/opentelemetry-exporter-live@^0.0.98":
-  version "0.0.98"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-exporter-live/-/opentelemetry-exporter-live-0.0.98.tgz#0ec3a84c42b88b8ca289cd61798ea48c6e0936e6"
-  integrity sha512-MVZ/rvWGXdnG/2pJO2JpQ5ReU8PxavhjdF8myaL+TiX4sdPIPvi3ilP2atUo/8ZNP0mmoCMeiU/99CWw3eHoSw==
+"@aspecto/opentelemetry-exporter-live@^0.0.99":
+  version "0.0.99"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-exporter-live/-/opentelemetry-exporter-live-0.0.99.tgz#6750df7cad66acaf4b03cca348a8ffde3c77d080"
+  integrity sha512-MCWQ5Ji/GDSgsIuzI1kdNsyIkH7OiVkCenGl9qXMynorH2c2J9kvO1DGqv4ZheHCFKDitD95PdeDyQs2YXISqA==
   dependencies:
     "@opentelemetry/api" "0.15.0"
     "@opentelemetry/core" "0.15.0"
@@ -35,27 +35,27 @@
     socket.io-client "^2.4"
     uuid "^8.2.0"
 
-"@aspecto/opentelemetry-plugin-express@^0.0.98":
-  version "0.0.98"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-plugin-express/-/opentelemetry-plugin-express-0.0.98.tgz#8f8fc51f1dee16e67b4966e34d86bbca2c2991b4"
-  integrity sha512-GFjYEBoDhymlDH5WRXc+3znmHJ2MGGEof3PmFgZNLx1Hrn/4lu4GfdLkh+/uFBP/uqcBSClwng4KiTyZ7Y83Sg==
+"@aspecto/opentelemetry-plugin-express@^0.0.99":
+  version "0.0.99"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-plugin-express/-/opentelemetry-plugin-express-0.0.99.tgz#db19fcf9b51ae20e7c488ff2b0c512ecbe69afc4"
+  integrity sha512-WKTP6c9QSv+nICmSpW5pJiqh9j2xl3A2KHdrb/ZoehcSzqut/X5hmp4+n13V9bYHfG6Q7oxhpKeP1azT8kYReg==
   dependencies:
-    "@aspecto/opentelemetry-base" "^0.0.98"
+    "@aspecto/opentelemetry-base" "^0.0.99"
     "@opentelemetry/semantic-conventions" "^0.15.0"
     shimmer "^1.2.1"
 
-"@aspecto/opentelemetry@^0.0.98":
-  version "0.0.98"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry/-/opentelemetry-0.0.98.tgz#37af6305d2ec7e2e11a6ce2668098b6ee6b468b5"
-  integrity sha512-BtjLlRA3qqYinG5L0/8iGJbs9fN59Sm/H6VJntTotGFWsrAgACUhfXxJyDOfzffWAQDaQamw+wyUeA/bqpvQEQ==
+"@aspecto/opentelemetry@^0.0.99":
+  version "0.0.99"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry/-/opentelemetry-0.0.99.tgz#21ea335876ea73c96bafc3a970cb424755ea7bf6"
+  integrity sha512-HQ7zCgqZDeYG51p+BhqxrZVKyd5hyf8AAfAb4Fc0FoGhNaDA4yZWZOwY4hpYTNVSxjiT9mEO5nuK+XeLDIyB2Q==
   dependencies:
-    "@aspecto/opentelemetry-base" "^0.0.98"
-    "@aspecto/opentelemetry-exporter-live" "^0.0.98"
-    "@aspecto/opentelemetry-plugin-express" "^0.0.98"
-    "@aspecto/plugin-mongodb" "^0.0.98"
+    "@aspecto/opentelemetry-base" "^0.0.99"
+    "@aspecto/opentelemetry-exporter-live" "^0.0.99"
+    "@aspecto/opentelemetry-plugin-express" "^0.0.99"
+    "@aspecto/plugin-mongodb" "^0.0.99"
     "@aspecto/sampling-rules" "0.0.5"
-    "@mzahor-test-org/open-telemetry-mongoose" "^0.0.98"
-    "@mzahor-test-org/plugin-ioredis" "^0.0.98"
+    "@mzahor-test-org/open-telemetry-mongoose" "^0.0.99"
+    "@mzahor-test-org/plugin-ioredis" "^0.0.99"
     "@opentelemetry/api" "0.15.0"
     "@opentelemetry/context-async-hooks" "0.15.0"
     "@opentelemetry/core" "0.15.0"
@@ -78,10 +78,10 @@
     socket.io-client "^2.4"
     uuid "^8.3.1"
 
-"@aspecto/plugin-mongodb@^0.0.98":
-  version "0.0.98"
-  resolved "https://registry.yarnpkg.com/@aspecto/plugin-mongodb/-/plugin-mongodb-0.0.98.tgz#86222f7d80f86892b0e81f85d0fb775fc245d0ce"
-  integrity sha512-Dm09xruCF1lnxhkISJKqn6hPCWAAnaqO/g7880OamkhjjU3yfbMxwqZuCIZaO0/6/QhNUvBa8iGEOC7PlkqEeQ==
+"@aspecto/plugin-mongodb@^0.0.99":
+  version "0.0.99"
+  resolved "https://registry.yarnpkg.com/@aspecto/plugin-mongodb/-/plugin-mongodb-0.0.99.tgz#67d0775767102a80ae2136b76eb9e46cfbdf47fd"
+  integrity sha512-Ow3HITTBlkSNwTn9o9JQ3awcvNDoLYnBIqUbZYFZox30yH8hcIq+q6KvLHJYvIMgwIaIuQqX4O1Jrz+35CCMOg==
   dependencies:
     "@opentelemetry/api" "^0.15.0"
     "@opentelemetry/core" "^0.15.0"
@@ -122,19 +122,19 @@
     lodash.camelcase "^4.3.0"
     protobufjs "^6.8.6"
 
-"@mzahor-test-org/open-telemetry-mongoose@^0.0.98":
-  version "0.0.98"
-  resolved "https://registry.yarnpkg.com/@mzahor-test-org/open-telemetry-mongoose/-/open-telemetry-mongoose-0.0.98.tgz#9d42d43a40e4d22598951a3792e5a874efc05ace"
-  integrity sha512-TRRa8YI9HyNfCb2Ubvr9vS4vVhGW6iieg+4xH/8HL8tPyXQj/ujErzKWYHHZ4ZEGddji623IafQfgNeiwq+WzA==
+"@mzahor-test-org/open-telemetry-mongoose@^0.0.99":
+  version "0.0.99"
+  resolved "https://registry.yarnpkg.com/@mzahor-test-org/open-telemetry-mongoose/-/open-telemetry-mongoose-0.0.99.tgz#1759507d3a2f9abd7f063d1d156ee5bc4624c456"
+  integrity sha512-epvKu3YDIupw2xk4RJArOLPk8/+vJ0Pz8ryBEcK9Eiktc6sSnpm7mE2c7YAgl29l0S4QOMmTIqMp9X4cEcjRDw==
   dependencies:
     "@opentelemetry/api" "^0.15.0"
     "@opentelemetry/core" "^0.15.0"
     shimmer "^1.2.1"
 
-"@mzahor-test-org/plugin-ioredis@^0.0.98":
-  version "0.0.98"
-  resolved "https://registry.yarnpkg.com/@mzahor-test-org/plugin-ioredis/-/plugin-ioredis-0.0.98.tgz#72d4698173763b8f8144426a0fa3836ce0985a5c"
-  integrity sha512-xu2+9BEj+pcTHm6A+tZABgAmjot4zejhyGdgbBlCM3agchG/oGVsjqLOmtxu4n8mQq5c0c5s6FC/J31mH874Ig==
+"@mzahor-test-org/plugin-ioredis@^0.0.99":
+  version "0.0.99"
+  resolved "https://registry.yarnpkg.com/@mzahor-test-org/plugin-ioredis/-/plugin-ioredis-0.0.99.tgz#5d80286f17cc0fc18133f5615db88a7d241cd56e"
+  integrity sha512-+mQQHF4OWSQzY1io/17mSZ/V4laNqPA9W2phZLjW5sUiyDgafSfQmpb9dDAi5v+xTv0ZtIwAKPFL3Xga9Z96LQ==
   dependencies:
     "@opentelemetry/api" "^0.15.0"
     "@opentelemetry/core" "^0.15.0"
