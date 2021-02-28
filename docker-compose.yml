@@ -2,7 +2,7 @@ version: "3"
 
 services:
   plain:
-    image: my-service
+    image: a-service
     build: "."
     ports:
       - "4040:4040"
@@ -11,7 +11,7 @@ services:
     environment:
       - PORT=4040
   aspecto:
-    image: my-service
+    image: a-service
     ports:
       - "4041:4041"
     expose: 
@@ -20,7 +20,7 @@ services:
       - PORT=4041
       - ASPECTO=true
   otel:
-    image: my-service
+    image: a-service
     ports:
       - "4042:4042"
     expose: 
