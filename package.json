@@ -8,7 +8,7 @@
         "plain": "NODE_ENV=development ts-node-dev src/index.ts",
         "aspecto": "NODE_ENV=development ASPECTO=true ts-node-dev src/index.ts",
         "otel": "NODE_ENV=development OTEL=true ts-node-dev src/index.ts",
-        "prettier": "prettier --config .prettierrc.yml --write \"**/*.{ts,tsx,js,jsx,json}\"",
+        "prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
         "benchmark": "ts-node scripts/measure.ts",
         "report:local": "ts-node scripts/generate-full-report-local-mode.ts report",
         "report:aws": "ts-node scripts/generate-full-report-aws-mode.ts report",
@@ -51,6 +51,7 @@
         "@opentelemetry/tracing": "^0.17.0"
     },
     "devDependencies": {
+        "@aspecto/prettier-config": "^0.0.1",
         "@types/express": "4.17.8",
         "@types/node": "14.11.2",
         "@types/pidusage": "2.0.1",
@@ -60,6 +61,7 @@
         "ts-node-dev": "1.0.0-pre.64",
         "typescript": "4.0.3"
     },
+    "prettier": "@aspecto/prettier-config",
     "lint-staged": {
         "*.{ts,tsx,js,jsx,json}": [
             "prettier --write",

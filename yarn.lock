@@ -88,6 +88,11 @@
     "@opentelemetry/semantic-conventions" "^0.15.0"
     shimmer "^1.2.1"
 
+"@aspecto/prettier-config@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@aspecto/prettier-config/-/prettier-config-0.0.1.tgz#40dfc91fdc87297bd118c34ce6474788f99706a6"
+  integrity sha512-9ZZCB6zjzaPXBekztyyfCBJ6JgS1Bt9m9Pvx5lJy4Zs8rZ7B97JS3cEft+a5FytvQNWx23aZh1RNttG8Dydseg==
+
 "@aspecto/sampling-rules@0.0.5":
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/@aspecto/sampling-rules/-/sampling-rules-0.0.5.tgz#043786e10d864440b0fb78633b22c6a4475adf0e"
