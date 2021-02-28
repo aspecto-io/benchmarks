@@ -2,10 +2,6 @@ name: Benchmark Test on AWS
 
 on:
   push:
-    branches: 
-      - master
-    paths:
-      - 'package.json'
   workflow_dispatch: 
 
 jobs:
@@ -95,10 +91,15 @@ jobs:
 
       - name: Benchmark Test - Aspecto
         run: |
+          echo "curl start collecting"
           curl http://$PUBLIC_IP:4041/start-collecting
+          echo "running ab"
           ab -n 1000 -c 10 -l http://$PUBLIC_IP:4041/test > scripts/logs/aspecto-ab.log
+          echo "asking for report"
           curl http://$PUBLIC_IP:4041/report > scripts/logs/aspecto-report.json
+          echo "printing report"
           cat scripts/logs/aspecto-ab.log
+          echo "prettyfying report report"
           python -m json.tool scripts/logs/aspecto-report.json
 
       - name: Print docker logs
