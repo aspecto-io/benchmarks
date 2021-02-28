@@ -124,10 +124,10 @@ jobs:
           name: reports
           path: scripts/logs/
 
-      - name: Terminate Instance
-        if: ${{ always() }}
-        run: aws ec2 terminate-instances --instance-ids $INSTANCE_ID
-        env:
-          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      # - name: Terminate Instance
+      #   if: ${{ always() }}
+      #   run: aws ec2 terminate-instances --instance-ids $INSTANCE_ID
+      #   env:
+      #     AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
