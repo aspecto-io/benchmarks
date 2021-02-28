@@ -48,32 +48,36 @@ const collectStatsWithInterval = async (time: number) => {
 app.get('/start-collecting', async (_req, res) => {
     collect = true;
     collectStatsWithInterval(500);
-    res.send({ message: `Stating to collect memory and CPU for process ${process.pid}` });
+    res.send({ message: `Starting to collect memory and CPU for process ${process.pid}` });
 });
 
 const average = (array: number[]) => (array.length ? (array.reduce((a, b) => a + b) / array.length).toFixed(2) : null);
 
 app.get('/report', async (_req, res) => {
-    collect = false;
-    const cpus = processInfo.map((info) => info.cpu);
-    const cpu = {
-        description: 'CPU% Usage',
-        initial: cpus[0],
-        min: Math.min(...cpus),
-        max: Math.max(...cpus),
-        avg: average(cpus),
-    };
-    const memories = processInfo.map((info) => info.memory);
-    const memory = {
-        description: 'Memory in MB Used',
-        initial: memories[0],
-        min: Math.min(...memories),
-        max: Math.max(...memories),
-        avg: average(memories),
-    };
+    try {
+        collect = false;
+        const cpus = processInfo.map((info) => info.cpu);
+        const cpu = {
+            description: 'CPU% Usage',
+            initial: cpus[0],
+            min: Math.min(...cpus),
+            max: Math.max(...cpus),
+            avg: average(cpus),
+        };
+        const memories = processInfo.map((info) => info.memory);
+        const memory = {
+            description: 'Memory in MB Used',
+            initial: memories[0],
+            min: Math.min(...memories),
+            max: Math.max(...memories),
+            avg: average(memories),
+        };
 
-    res.send({ cpu, memory });
-    processInfo.length = 0;
+        res.send({ cpu, memory });
+        processInfo.length = 0;
+    } catch (err) {
+        res.status(500).send(`Failed.\nMessage:${err.message}\nStack: ${err.stack}`);
+    }
 });
 
 app.listen(PORT, () => logger.info(`Server started on port ${PORT}`));
