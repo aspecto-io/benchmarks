@@ -19,14 +19,14 @@ services:
     environment:
       - PORT=4041
       - ASPECTO=true
-  otel:
-    image: a-service
-    ports:
-      - "4042:4042"
-    expose: 
-      - "4042"
-    environment:
-      - PORT=4042
-      - OTEL=true
+  # otel:
+  #   image: a-service
+  #   ports:
+  #     - "4042:4042"
+  #   expose: 
+  #     - "4042"
+  #   environment:
+  #     - PORT=4042
+  #     - OTEL=true
   
 
