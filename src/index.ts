@@ -76,7 +76,8 @@ app.get('/report', async (_req, res) => {
         res.send({ cpu, memory });
         processInfo.length = 0;
     } catch (err) {
-        res.status(500).send(`Failed.\nMessage:${err.message}\nStack: ${err.stack}`);
+        logger.error('Report failed', err);
+        res.status(500).send(`Failed.\nMessage: ${err.message}\nStack: ${err.stack}`);
     }
 });
 

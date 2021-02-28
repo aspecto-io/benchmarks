@@ -105,13 +105,15 @@ jobs:
           echo "prettyfying report report"
           python -m json.tool scripts/logs/aspecto-report.json
 
-      - name: Print docker logs
-        run: ssh -o StrictHostKeyChecking=no -i benchmark.pem ubuntu@$PUBLIC_IP docker-compose -f benchmarks/docker-compose.yml logs
 
       - name: Generate Full report
         run: yarn report:aws
         env:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+      
+      - name: Print docker logs
+        if: ${{ always() }}
+        run: ssh -o StrictHostKeyChecking=no -i benchmark.pem ubuntu@$PUBLIC_IP docker-compose -f benchmarks/docker-compose.yml logs
 
       - name: Upload reports to artifacts
         if: ${{ always() }}
