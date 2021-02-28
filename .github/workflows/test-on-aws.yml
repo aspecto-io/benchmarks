@@ -86,6 +86,7 @@ jobs:
           ab -n 1000 -c 10 -l http://$PUBLIC_IP:4040/test > scripts/logs/baseline-ab.log
           curl http://$PUBLIC_IP:4040/report > scripts/logs/baseline-report.json
           cat scripts/logs/baseline-ab.log
+          cat scripts/logs/baseline-report.json
           python -m json.tool scripts/logs/baseline-report.json
 
 
@@ -97,8 +98,10 @@ jobs:
           ab -n 1000 -c 10 -l http://$PUBLIC_IP:4041/test > scripts/logs/aspecto-ab.log
           echo "asking for report"
           curl http://$PUBLIC_IP:4041/report > scripts/logs/aspecto-report.json
-          echo "printing report"
+          echo "printing ab log"
           cat scripts/logs/aspecto-ab.log
+          echo "printing aspecto report"
+          cat scripts/logs/aspecto-report.json
           echo "prettyfying report report"
           python -m json.tool scripts/logs/aspecto-report.json
 
