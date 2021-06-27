@@ -27,7 +27,6 @@ const generateForContainer = (description: string, container: string) => {
 
 export const generateFullReport = () => {
     generateForContainer('Base Line - No Instrumentation', 'benchmarks_plain');
-    generateForContainer('Instrumentation with Basic Opentelemetry', 'benchmarks_otel');
     generateForContainer('Instrumentation with Aspecto', 'benchmarks_aspecto');
 };
 

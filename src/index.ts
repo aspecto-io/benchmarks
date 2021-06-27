@@ -1,15 +1,11 @@
-import { PORT, ASPECTO, OTEL } from './config';
+import { PORT, ASPECTO } from './config';
 import logger from '@aspecto/logger';
 import Instrument from '@aspecto/opentelemetry';
-import { initOtel } from './opentelemetry';
 import pidusage from 'pidusage';
 
 if (ASPECTO) {
     logger.info(`Instrumenting using Aspecto process at port ${PORT}`);
     Instrument({ logger, samplingRatio: 0.1 });
-} else if (OTEL) {
-    logger.info(`Instrumenting using OpenTelemetry process at port ${PORT}`);
-    initOtel();
 }
 
 import express from 'express';
