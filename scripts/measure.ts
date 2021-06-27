@@ -68,10 +68,6 @@ const containers = [
         name: 'benchmarks_aspecto',
         port: 4041,
     },
-    {
-        name: 'benchmarks_otel',
-        port: 4042,
-    },
 ];
 
 const measure = async () => {

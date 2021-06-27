@@ -7,7 +7,6 @@
         "start": "NODE_ENV=production ts-node -T src/index.ts",
         "plain": "NODE_ENV=development ts-node-dev src/index.ts",
         "aspecto": "NODE_ENV=development ASPECTO=true ts-node-dev src/index.ts",
-        "otel": "NODE_ENV=development OTEL=true ts-node-dev src/index.ts",
         "prettier": "prettier --config .prettierrc.yml --write \"**/*.{ts,tsx,js,jsx,json}\"",
         "benchmark": "ts-node scripts/measure.ts",
         "report:local": "ts-node scripts/generate-full-report-local-mode.ts report",
@@ -33,22 +32,12 @@
         "@aspecto/logger": "^0.0.13",
         "@aspecto/opentelemetry": "^0.0.118",
         "ab-result": "^1.0.2",
-        "axios": "^0.20.0",
+        "axios": "^0.21.1",
         "colors": "^1.4.0",
         "env-var": "^6.3.0",
         "express": "^4.17.1",
         "pidusage": "^2.0.21",
         "ts-node": "^9.0.0"
-    },
-    "peerDependencies": {
-        "@opentelemetry/api": "^0.17.0",
-        "@opentelemetry/core": "^0.17.0",
-        "@opentelemetry/exporter-collector": "^0.17.0",
-        "@opentelemetry/exporter-zipkin": "^0.17.0",
-        "@opentelemetry/instrumentation": "^0.17.0",
-        "@opentelemetry/node": "^0.17.0",
-        "@opentelemetry/plugin-express": "^0.10.0",
-        "@opentelemetry/tracing": "^0.17.0"
     },
     "devDependencies": {
         "@types/express": "4.17.8",
