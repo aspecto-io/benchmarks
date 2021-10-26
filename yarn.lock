@@ -9,15 +9,15 @@
   dependencies:
     serialize-error "^5.0.0"
 
-"@aspecto/opentelemetry-base@^0.0.127":
-  version "0.0.127"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-base/-/opentelemetry-base-0.0.127.tgz#9dfdebae0779a8d0cee9084da1b41c91d0b0247d"
-  integrity sha512-7ZzGiCgDkbzDWUcBE8cCVrbW26TrylhZHb3xwHn87WZsNZdO1Rm42+8214iFk1+1/hD/Fch+vpPtdehM9T79Dg==
+"@aspecto/opentelemetry-base@^0.0.128":
+  version "0.0.128"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-base/-/opentelemetry-base-0.0.128.tgz#725792647105ecbf18192af620318726ba4c367b"
+  integrity sha512-vAzq/LeiPFtVaFJxEpuOZYtpqnnBZ2QhCf/g31IX2G6Tpbv21k3UziQLwiBs7xDEygRlhBHWqLwuX2W6nCjvoQ==
 
-"@aspecto/opentelemetry-exporter-live@^0.0.127":
-  version "0.0.127"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-exporter-live/-/opentelemetry-exporter-live-0.0.127.tgz#2fa1a0c68b05e734123979702d7fc8e305f56632"
-  integrity sha512-bN+2IToNrYAE2QOPbsNf5NBaWU2tWfgjSAzsD7hZBLxVIejZp49QTnjmg2qY/MvYyELhQ16chJ5Fex1pF3GLbg==
+"@aspecto/opentelemetry-exporter-live@^0.0.128":
+  version "0.0.128"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-exporter-live/-/opentelemetry-exporter-live-0.0.128.tgz#83f6ae9ff3fb04818531ad5f82a8e2da77faa5b1"
+  integrity sha512-c3htoUGVH4wRw3ee/SQ9xaZnykl7/5YEB+3m/YRLfmQlda6rWX/5zZjjByvQh34HtJZ2NwTYR3rOPKDV/ZwWKQ==
   dependencies:
     "@opentelemetry/api" "1.0.2"
     "@opentelemetry/core" "0.25.0"
@@ -34,23 +34,23 @@
     socket.io-client "^4.0.1"
     uuid "^8.2.0"
 
-"@aspecto/opentelemetry-instrumentation-mongodb@^0.0.127":
-  version "0.0.127"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-instrumentation-mongodb/-/opentelemetry-instrumentation-mongodb-0.0.127.tgz#f904f589747d1d3c85fb713b2d4fc2e9b027495d"
-  integrity sha512-YptTAcJ+ZTsaV14u2YjXAGjVau3iBlB0ngBYOS/eKVK2/Qz/mU0/Fovmf7TCG/2a9bDM825D4nDhlgTkc91pmQ==
+"@aspecto/opentelemetry-instrumentation-mongodb@^0.0.128":
+  version "0.0.128"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-instrumentation-mongodb/-/opentelemetry-instrumentation-mongodb-0.0.128.tgz#ba7ff34f90df623654495fbb5505f069d959a7db"
+  integrity sha512-QUWuYxPWLl6DcecA89+Oylvt17RP1zSrOnIhfnsfm5YIl3bo5ssYpT9lxr+cn50C+G+uchlTaGLmnNvl0NGZ0g==
   dependencies:
     "@opentelemetry/api" "1.0.2"
     "@opentelemetry/instrumentation" "0.25.0"
     "@opentelemetry/semantic-conventions" "0.25.0"
 
-"@aspecto/opentelemetry@^0.0.127":
-  version "0.0.127"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry/-/opentelemetry-0.0.127.tgz#b59e3750de9f649d029780aab58d432ae572538e"
-  integrity sha512-wBHfIqVtt5aJDw5gJrWeT30X9R29nzm6WcxMypSqIfED0ymbYpwsK/k0xafw9fXT2djjkg4Ti1QRS4Lyta5Pyg==
+"@aspecto/opentelemetry@^0.0.128":
+  version "0.0.128"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry/-/opentelemetry-0.0.128.tgz#5c7efb6f1101c64ede6c27ffc9e29668525b036e"
+  integrity sha512-hSznJt4Dfj7gQd/B7Q2WVfhkWmF3k/mg0Qf4SStdkmFWCEM7fDwjCAqPbhk/9KLx5W+p5qzhmF9c+OIpGv3mNA==
   dependencies:
-    "@aspecto/opentelemetry-base" "^0.0.127"
-    "@aspecto/opentelemetry-exporter-live" "^0.0.127"
-    "@aspecto/opentelemetry-instrumentation-mongodb" "^0.0.127"
+    "@aspecto/opentelemetry-base" "^0.0.128"
+    "@aspecto/opentelemetry-exporter-live" "^0.0.128"
+    "@aspecto/opentelemetry-instrumentation-mongodb" "^0.0.128"
     "@aspecto/sampling-rules" "0.0.5"
     "@opentelemetry/api" "1.0.2"
     "@opentelemetry/context-async-hooks" "0.25.0"
