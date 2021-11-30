@@ -9,15 +9,15 @@
   dependencies:
     serialize-error "^5.0.0"
 
-"@aspecto/opentelemetry-base@^0.0.129":
-  version "0.0.129"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-base/-/opentelemetry-base-0.0.129.tgz#dc64e21a92163e23f38c5b983e49e07612ded3e7"
-  integrity sha512-KO2QJb9RG96azYCKY7VbMUwI3gWoaT+ZwqvVfb0K4Harw6OoO7CacCz/qWc+Yl4zS3wR1jg674VVPaP7DCPm0w==
+"@aspecto/opentelemetry-base@^0.0.130":
+  version "0.0.130"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-base/-/opentelemetry-base-0.0.130.tgz#2c1d9680c2a41beeb1ed0677de3c99e790e24f5b"
+  integrity sha512-2ih4Ld8RGmHAnY2B64LNXdjqsogwNkLLUPIv4N+GkdkcB5beDueX/aWQWeTMIeH9XnvTkHL7v3YuQ3u6olpuYg==
 
-"@aspecto/opentelemetry-exporter-live@^0.0.129":
-  version "0.0.129"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-exporter-live/-/opentelemetry-exporter-live-0.0.129.tgz#5b97f337e442731273499968b6d73b8fa5dcad78"
-  integrity sha512-NHnY6ykvDgQcjtxgSEG91oi28vFSlO5zUYwQckfWdh73HUU7SEqhaIx8gvcZQ5nbM285FZu3rzwS55ArEyKA1w==
+"@aspecto/opentelemetry-exporter-live@^0.0.130":
+  version "0.0.130"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-exporter-live/-/opentelemetry-exporter-live-0.0.130.tgz#fc379ecd7cf995eb3c9de2208f545c7dfdd8393a"
+  integrity sha512-ZpyyJBWUGbJ5Eywu/gQ6zgDEFR9iCcPEVMlc+wTVMUQA5JJTjTY0QvUU/Y9cZokaErRcVJfD6zI5AhIEQLN+DA==
   dependencies:
     "@opentelemetry/core" "1.0.0"
     "@opentelemetry/sdk-trace-base" "1.0.0"
@@ -33,23 +33,23 @@
     socket.io-client "^4.0.1"
     uuid "^8.2.0"
 
-"@aspecto/opentelemetry-instrumentation-mongodb@^0.0.129":
-  version "0.0.129"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-instrumentation-mongodb/-/opentelemetry-instrumentation-mongodb-0.0.129.tgz#15c268496215508899e3e737e05637e2f02ce292"
-  integrity sha512-V1buCh9gk9e/Kpxp/B16B326ojbbM174joT7t87E7ppX7bzxEdQMVwQK5hwU/bQtfpwpKThctIosoIGDYqpa9A==
+"@aspecto/opentelemetry-instrumentation-mongodb@^0.0.130":
+  version "0.0.130"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry-instrumentation-mongodb/-/opentelemetry-instrumentation-mongodb-0.0.130.tgz#61a039f22e382ae60d69364001b3a4a480986b72"
+  integrity sha512-2jlj9cJd7oiftcnoHswhqR1UmBZMlaUYZxGi86SXHnS1LDHOv0tn6mhaac2+Dq8TsnMcNCXLosRvVE3pOwMrLw==
   dependencies:
     "@opentelemetry/instrumentation" "0.26.0"
     "@opentelemetry/semantic-conventions" "1.0.0"
 
-"@aspecto/opentelemetry@^0.0.129":
-  version "0.0.129"
-  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry/-/opentelemetry-0.0.129.tgz#22bf858fc240b7aa0ad94b23baed474413785213"
-  integrity sha512-ZdMYmCb+Y66O9I7Qvl2NCJ2GK1H3Maf053ncc8hXRVSBrXhoww6RGrNYFGYJ4CC4MPptbZeebgK9MKlDN5z+7w==
+"@aspecto/opentelemetry@^0.0.130":
+  version "0.0.130"
+  resolved "https://registry.yarnpkg.com/@aspecto/opentelemetry/-/opentelemetry-0.0.130.tgz#f1c5777087a60a045eb60bab6b6f95512bd498b0"
+  integrity sha512-zyS3SFXX6bBp+pgzXKJ6357Ns6HyW8y+9T9YItNCHiWfAXdaEiZF/NA/GFyFRDpjf7rlz2mmjDvlo0uQWO1rJQ==
   dependencies:
-    "@aspecto/opentelemetry-base" "^0.0.129"
-    "@aspecto/opentelemetry-exporter-live" "^0.0.129"
-    "@aspecto/opentelemetry-instrumentation-mongodb" "^0.0.129"
-    "@aspecto/sampling-rules" "0.0.5"
+    "@aspecto/opentelemetry-base" "^0.0.130"
+    "@aspecto/opentelemetry-exporter-live" "^0.0.130"
+    "@aspecto/opentelemetry-instrumentation-mongodb" "^0.0.130"
+    "@aspecto/sampling-rules" "0.0.7"
     "@opentelemetry/api" "1.0.3"
     "@opentelemetry/context-async-hooks" "1.0.0"
     "@opentelemetry/core" "1.0.0"
@@ -58,7 +58,7 @@
     "@opentelemetry/exporter-zipkin" "1.0.0"
     "@opentelemetry/instrumentation" "0.26.0"
     "@opentelemetry/instrumentation-aws-lambda" "0.25.0"
-    "@opentelemetry/instrumentation-aws-sdk" "0.1.0"
+    "@opentelemetry/instrumentation-aws-sdk" "0.3.1"
     "@opentelemetry/instrumentation-http" "0.26.0"
     "@opentelemetry/instrumentation-ioredis" "0.26.0"
     "@opentelemetry/instrumentation-redis" "0.26.0"
@@ -70,6 +70,9 @@
     "@types/aws-lambda" "^8.10.64"
     debug "^4.3.1"
     is-promise "^4.0.0"
+    lodash.get "^4.4.2"
+    lodash.has "^4.5.2"
+    lodash.set "^4.3.2"
     object-sizeof "1.6.1"
     opentelemetry-instrumentation-amqplib "0.26.0"
     opentelemetry-instrumentation-elasticsearch "0.26.0"
@@ -80,7 +83,7 @@
     opentelemetry-instrumentation-node-cache "0.26.0"
     opentelemetry-instrumentation-sequelize "0.26.0"
     opentelemetry-instrumentation-socket.io "0.26.0"
-    opentelemetry-instrumentation-typeorm "0.26.0"
+    opentelemetry-instrumentation-typeorm "0.26.1"
     opentelemetry-resource-detector-deployment "0.26.0"
     opentelemetry-resource-detector-git "0.26.0"
     opentelemetry-resource-detector-service "0.26.0"
@@ -89,10 +92,10 @@
     socket.io-client "^4.0.1"
     uuid "^8.3.1"
 
-"@aspecto/sampling-rules@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@aspecto/sampling-rules/-/sampling-rules-0.0.5.tgz#043786e10d864440b0fb78633b22c6a4475adf0e"
-  integrity sha512-krVaOKNi4Lrx/4Nz++LvEPfGQpvqDAs02PS+GoKEox4D1RkIP4wsSNojAwlmWZExBs63vb4LatdYacPluY2Z4Q==
+"@aspecto/sampling-rules@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@aspecto/sampling-rules/-/sampling-rules-0.0.7.tgz#44080ba81e7212b0acc1ee58e18457ce588eeaef"
+  integrity sha512-3LdLJWQQMI0IYAmnFDKOfm/w+aj91Tn7j1MYwwJ9uCjyEbmH4AbnFly+xBD90V578JZfGaHx53rQ//aK6OuTCA==
 
 "@babel/code-frame@^7.0.0":
   version "7.14.5"
@@ -216,10 +219,10 @@
     "@opentelemetry/tracing" "^0.24.0"
     "@types/aws-lambda" "8.10.81"
 
-"@opentelemetry/instrumentation-aws-sdk@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@opentelemetry/instrumentation-aws-sdk/-/instrumentation-aws-sdk-0.1.0.tgz#4a878abed22d9d41305e84cab49aafbf86b826da"
-  integrity sha512-HQXw7VszWFTgDeosTUAdhBgo4V6haKB1BrRU/4hlEGPFgoaL1YXlTU2VmaN5LtvX6uv0DwYowWogSgICa5BP0g==
+"@opentelemetry/instrumentation-aws-sdk@0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@opentelemetry/instrumentation-aws-sdk/-/instrumentation-aws-sdk-0.3.1.tgz#5728c4bc85e3ecf6aff67d3da37fdcc36d1ade1b"
+  integrity sha512-eFXmUo+ZtYK6FvFUHU831gDaEVNya+BHu56FJxOBtis48Xh5qbAAXDaW/sPgzhQ9ofQslKLr5L9oclS6vtBmSQ==
   dependencies:
     "@opentelemetry/core" "^1.0.0"
     "@opentelemetry/instrumentation" "^0.26.0"
@@ -1549,10 +1552,25 @@ lodash.camelcase@^4.3.0:
   resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
   integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
 
+lodash.get@^4.4.2:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
+  integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
+
+lodash.has@^4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/lodash.has/-/lodash.has-4.5.2.tgz#d19f4dc1095058cccbe2b0cdf4ee0fe4aa37c862"
+  integrity sha1-0Z9NwQlQWMzL4rDN9O4P5Ko3yGI=
+
 lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
+
+lodash.set@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/lodash.set/-/lodash.set-4.3.2.tgz#d8757b1da807dde24816b0d6a84bea1a76230b23"
+  integrity sha1-2HV7HagH3eJIFrDWqEvqGnYjCyM=
 
 lodash@^4.17.19:
   version "4.17.21"
@@ -1870,10 +1888,10 @@ opentelemetry-instrumentation-socket.io@0.26.0:
     "@opentelemetry/semantic-conventions" "^1.0.0"
     is-promise "^4.0.0"
 
-opentelemetry-instrumentation-typeorm@0.26.0:
-  version "0.26.0"
-  resolved "https://registry.yarnpkg.com/opentelemetry-instrumentation-typeorm/-/opentelemetry-instrumentation-typeorm-0.26.0.tgz#04b8d14673506aa230e0c4c664dbb6031808c513"
-  integrity sha512-DYqoleK/xza+86uuuKjChNBsRuzpns+uiWKsIGwseQnqT4/MjZqtIYOTrgGS9nPZsSmsskVSD6I9Oe6tARpkcg==
+opentelemetry-instrumentation-typeorm@0.26.1:
+  version "0.26.1"
+  resolved "https://registry.yarnpkg.com/opentelemetry-instrumentation-typeorm/-/opentelemetry-instrumentation-typeorm-0.26.1.tgz#6800376d13facf5d3df78d0178f200c585fa9473"
+  integrity sha512-0DGzNhzpV2LbtkNocOkN1DvQewlr0hjElwZgqNCBrWnYmBkDWEkIhz+KvX2j0pUecZG0yKx1t5YHoYprTTkueg==
   dependencies:
     "@opentelemetry/core" "^1.0.0"
     "@opentelemetry/instrumentation" "^0.26.0"
