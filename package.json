@@ -32,7 +32,7 @@
         "@aspecto/logger": "^0.0.15",
         "@aspecto/opentelemetry": "^0.0.136",
         "ab-result": "^1.0.2",
-        "axios": "^0.21.1",
+        "axios": "^0.21.2",
         "colors": "^1.4.0",
         "env-var": "^6.3.0",
         "express": "^4.17.3",
