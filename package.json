@@ -30,7 +30,7 @@
     "homepage": "https://github.com/aspecto-io/benchmarks#readme",
     "dependencies": {
         "@aspecto/logger": "^0.0.15",
-        "@aspecto/opentelemetry": "^0.0.136",
+        "@aspecto/opentelemetry": "^0.1.0",
         "ab-result": "^1.0.2",
         "axios": "^0.21.2",
         "colors": "^1.4.0",
